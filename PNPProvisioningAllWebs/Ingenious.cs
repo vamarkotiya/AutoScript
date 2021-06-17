@@ -22,6 +22,7 @@ namespace PNPProvisioningAllWebs
     class Program
     {
         static String O365userName, O365password;
+        
         static String siteURL = "", rootsiteUrl = "", hotelTitle = "", hotelURL = "";
         static SharePointOnlineCredentials credentials;
         static String path = "";
