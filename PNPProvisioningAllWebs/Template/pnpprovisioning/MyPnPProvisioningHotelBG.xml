@@ -1,0 +1,844 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.14.1910.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-A21D8F53F94B4DE08A51C821F96F9CA6">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-A21D8F53F94B4DE08A51C821F96F9CA6" Version="1" BaseSiteTemplate="STS#3" Scope="Web">
+      <pnp:Lists>
+       <pnp:ListInstance Title="HMV GM As Needed Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/HMV GM As Needed Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/HMV GM As Needed Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/HMV GM As Needed Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/HMV GM As Needed Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{34ECEE0B-0B5A-4FA5-8E5E-FE96B1B9E06A}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/HMV GM As Needed Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="New_x0020_Hire" />
+                <FieldRef Name="Uniform_x002f_Nametag_x0020_Orde" />
+                <FieldRef Name="Ongoing_x0020_Training" />
+                <FieldRef Name="Distribute_x0020_Time_x0020_Card" />
+                <FieldRef Name="New_x0020_Associate" />
+                <FieldRef Name="Hiring_x0020__x0026__x0020_Train" />
+                <FieldRef Name="AssignedTo" />
+                <FieldRef Name="Status" />
+                <FieldRef Name="OverallConfigValue" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{B65F1B28-C1FC-40B5-BF31-196CD721A1B2}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/HMV GM As Needed Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="New_x0020_Hire" />
+                <FieldRef Name="Uniform_x002f_Nametag_x0020_Orde" />
+                <FieldRef Name="Ongoing_x0020_Training" />
+                <FieldRef Name="Distribute_x0020_Time_x0020_Card" />
+                <FieldRef Name="New_x0020_Associate" />
+                <FieldRef Name="Hiring_x0020__x0026__x0020_Train" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="New Hire" Description="New Hire Paper Work to PSH" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9e347552-5b55-4d83-9060-ce368318ccb4}" SourceID="{db838637-6856-474c-b82a-875c343b9c56}" StaticName="New_x0020_Hire" Name="New_x0020_Hire" ColName="bit1" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Uniform/Nametag Order" Description="Uniform / Nametag Order" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{2c597bb5-7727-4e80-8e1c-0edfd26cc9c5}" SourceID="{db838637-6856-474c-b82a-875c343b9c56}" StaticName="Uniform_x002f_Nametag_x0020_Orde" Name="Uniform_x002f_Nametag_x0020_Orde" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Ongoing Training" Description="Ongoing Training" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{84b553a1-ba06-4cfa-8edf-34d0a71df1b1}" SourceID="{db838637-6856-474c-b82a-875c343b9c56}" StaticName="Ongoing_x0020_Training" Name="Ongoing_x0020_Training" ColName="bit3" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Distribute Time Cards" Description="Distribute Time Cards" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5ac5feb1-6d9a-4cf8-a22f-2b85fa42a3a0}" SourceID="{db838637-6856-474c-b82a-875c343b9c56}" StaticName="Distribute_x0020_Time_x0020_Card" Name="Distribute_x0020_Time_x0020_Card" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="New Associate" Description="New Associate Orientation" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1e1100d9-a6cf-4501-ab6d-f7edd5b698b0}" SourceID="{db838637-6856-474c-b82a-875c343b9c56}" StaticName="New_x0020_Associate" Name="New_x0020_Associate" ColName="bit5" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Hiring &amp; Training" Description="Hiring &amp; Training" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{823b9ea8-808b-44ea-8e0c-1f7032f5a765}" SourceID="{db838637-6856-474c-b82a-875c343b9c56}" StaticName="Hiring_x0020__x0026__x0020_Train" Name="Hiring_x0020__x0026__x0020_Train" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="User" DisplayName="AssignedTo" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{79a0b248-d5db-4ef6-8a5f-d31491da7c1b}" SourceID="{db838637-6856-474c-b82a-875c343b9c56}" StaticName="AssignedTo" Name="AssignedTo" ColName="int1" RowOrdinal="0" />
+            <Field Type="Choice" DisplayName="Status" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{5712bf14-aef6-4046-82ed-f1d9ffdf8daa}" SourceID="{db838637-6856-474c-b82a-875c343b9c56}" StaticName="Status" Name="Status" ColName="nvarchar4" RowOrdinal="0">
+              <Default>Not Started</Default>
+              <CHOICES>
+                <CHOICE>Not Started</CHOICE>
+                <CHOICE>In Progress</CHOICE>
+                <CHOICE>Completed</CHOICE>
+              </CHOICES>
+            </Field>
+            <Field Type="Calculated" DisplayName="OverallConfigValue" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{2e90d1d5-b8c2-4d4e-8dec-8c960e6eea78}" SourceID="{db838637-6856-474c-b82a-875c343b9c56}" StaticName="OverallConfigValue" Name="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" CustomFormatter="" Required="FALSE" Version="1">
+              <Formula>=IF([Distribute Time Cards]=TRUE,IF([Hiring &amp; Training]=TRUE,IF([New Hire]=TRUE,IF([Ongoing Training]=TRUE,IF([Uniform/Nametag Order]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field Type="Calculated" DisplayName="ChecklistStatus" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{84f4d8dd-8c50-43fc-8dad-2930e5e8f5ee}" SourceID="{db838637-6856-474c-b82a-875c343b9c56}" StaticName="ChecklistStatus" Name="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0">
+              <Formula>=IF([Distribute Time Cards]=TRUE,IF([Hiring &amp; Training]=TRUE,IF([New Hire]=TRUE,IF([Ongoing Training]=TRUE,IF([Uniform/Nametag Order]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="HMV GM Daily Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/HMV GM Daily Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/HMV GM Daily Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/HMV GM Daily Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/HMV GM Daily Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{B16D120A-F20A-42F6-9378-5692E15BF649}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/HMV GM Daily Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="MBWA_x0020_Manage" />
+                <FieldRef Name="Verify_x0020_Audit_x0020_Pack" />
+                <FieldRef Name="Track_x0020_call_x0020_offs" />
+                <FieldRef Name="Review_x0020_Daily" />
+                <FieldRef Name="Credit_x0020_Card_x0020_and_x002" />
+                <FieldRef Name="Inspect_x0020_Hotel_x0020_Rooms" />
+                <FieldRef Name="Review_x0020_Availability" />
+                <FieldRef Name="Check_x0020_staff" />
+                <FieldRef Name="Review_x0020_upcoming_x0020_Grou" />
+                <FieldRef Name="Check_x0020_E_x002d_mail" />
+                <FieldRef Name="Log_x0020_in_x0020_to_x0020_Secu" />
+                <FieldRef Name="Review_x0020_Labor_x0020_Report" />
+                <FieldRef Name="Correct_x0020_payroll" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{CFCD04ED-14E2-425E-AFCE-3A6F525AA38F}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/HMV GM Daily Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" Ascending="FALSE" />
+                </OrderBy>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="MBWA_x0020_Manage" />
+                <FieldRef Name="Verify_x0020_Audit_x0020_Pack" />
+                <FieldRef Name="Track_x0020_call_x0020_offs" />
+                <FieldRef Name="Review_x0020_Daily" />
+                <FieldRef Name="Credit_x0020_Card_x0020_and_x002" />
+                <FieldRef Name="Inspect_x0020_Hotel_x0020_Rooms" />
+                <FieldRef Name="Review_x0020_Availability" />
+                <FieldRef Name="Check_x0020_staff" />
+                <FieldRef Name="Review_x0020_upcoming_x0020_Grou" />
+                <FieldRef Name="Check_x0020_E_x002d_mail" />
+                <FieldRef Name="Log_x0020_in_x0020_to_x0020_Secu" />
+                <FieldRef Name="Review_x0020_Labor_x0020_Report" />
+                <FieldRef Name="Correct_x0020_payroll" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="MBWA Manage" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5e5af9e0-843b-4c50-8a4d-0bc96b4cd560}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="MBWA_x0020_Manage" Name="MBWA_x0020_Manage" ColName="bit1" RowOrdinal="0" Description="“MBWA“ Manage by Walking Around." CustomFormatter="" Required="FALSE" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Verify Audit Pack" Description="Verify Audit Pack &amp; Deposit Slip" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{87c5f490-d12e-4d9d-a23f-06e9b85b1a5d}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Verify_x0020_Audit_x0020_Pack" Name="Verify_x0020_Audit_x0020_Pack" ColName="bit2" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Track call offs" Description="Track call offs" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5023a892-a4dd-4e25-b666-95e1671df856}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Track_x0020_call_x0020_offs" Name="Track_x0020_call_x0020_offs" ColName="bit3" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Review Daily" Description="Review Daily Report vs. Budget" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{6c504eff-aa1d-417d-91ca-383e30e908b9}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Review_x0020_Daily" Name="Review_x0020_Daily" ColName="bit4" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Credit Card and deposits" Description="Enter Credit Card and deposits in to drop box Excel spread sheet" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b342ae11-b1b7-4a9e-8996-fe8f35eaed0b}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Credit_x0020_Card_x0020_and_x002" Name="Credit_x0020_Card_x0020_and_x002" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Inspect Hotel Rooms" Description="Inspect Hotel Rooms" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a23cff95-e39c-494d-b3a0-5f8cce5835f6}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Inspect_x0020_Hotel_x0020_Rooms" Name="Inspect_x0020_Hotel_x0020_Rooms" ColName="bit6" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Review Availability" Description="Review Availability: MARSHA &amp; PMS 6 weeks out. Adjust selling strategy" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{6c390e3f-38df-430c-ba85-ff634088d30b}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Review_x0020_Availability" Name="Review_x0020_Availability" ColName="bit7" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check staff" Description="Check staff for proper uniform &amp; engraved nametag" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{3b9df734-56e0-4d79-b80d-5b76e6b1f17c}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Check_x0020_staff" Name="Check_x0020_staff" ColName="bit8" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Review upcoming Group" Description="Review upcoming Group/Corporate reservations 30,60,90 days out" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{79278431-640e-4afb-a213-3ea1a4eda139}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Review_x0020_upcoming_x0020_Grou" Name="Review_x0020_upcoming_x0020_Grou" ColName="bit9" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check E-mail" Description="Check E-mail &amp; Cc-mail" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{33ef5989-e759-44ba-9d04-27d99775b944}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Check_x0020_E_x002d_mail" Name="Check_x0020_E_x002d_mail" ColName="bit10" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Log in to Secure portal" Description="Log in to Secure portal and complete 5 min Daily labor Check In" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f9d07c6e-42d4-44b7-8ecf-b571ec91546b}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Log_x0020_in_x0020_to_x0020_Secu" Name="Log_x0020_in_x0020_to_x0020_Secu" ColName="bit11" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Review Labor Report" Description="Review Labor Report to Monitor Staffing Tables" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{25ec3cd6-d81e-4248-9953-e1e1896faf8d}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Review_x0020_Labor_x0020_Report" Name="Review_x0020_Labor_x0020_Report" ColName="bit12" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Correct payroll" Description="Correct payroll punches" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e33a2bf3-ef22-468a-98c6-c1b2e25936e7}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="Correct_x0020_payroll" Name="Correct_x0020_payroll" ColName="bit13" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Calculated" DisplayName="OverallConfigValue" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{3edc08db-0bce-4a20-88fc-1f098e57a5b1}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="OverallConfigValue" Name="OverallConfigValue" ColName="sql_variant2" RowOrdinal="0">
+              <Formula>=IF([MBWA Manage]=TRUE,IF([Verify Audit Pack]=TRUE,IF([Track call offs]=TRUE,IF([Review Daily]=TRUE,IF([Credit Card and deposits]=TRUE,IF([Inspect Hotel Rooms]=TRUE,IF([Review Labor Report]=TRUE,IF([Check staff]=TRUE,IF([Review upcoming Group]=TRUE,IF([Check E-mail]=TRUE,IF([Log in to Secure portal]=TRUE,IF([Review Labor Report]=TRUE,IF([Correct payroll]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="AssignedTo" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{a3a1a34e-b8dc-4295-8ac7-7828145c50f8}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="AssignedTo" Name="AssignedTo" ColName="int1" RowOrdinal="0" />
+            <Field Type="Calculated" DisplayName="ChecklistStatus" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{454a6bbc-ca87-40e5-9947-9366f92da32b}" SourceID="{7944e40f-a678-446b-843f-3997c031d0ea}" StaticName="ChecklistStatus" Name="ChecklistStatus" ColName="sql_variant1" RowOrdinal="0">
+              <Formula>=IF([MBWA Manage]=TRUE,IF([Verify Audit Pack]=TRUE,IF([Track call offs]=TRUE,IF([Review Daily]=TRUE,IF([Credit Card and deposits]=TRUE,IF([Inspect Hotel Rooms]=TRUE,IF([Review Labor Report]=TRUE,IF([Check staff]=TRUE,IF([Review upcoming Group]=TRUE,IF([Check E-mail]=TRUE,IF([Log in to Secure portal]=TRUE,IF([Review Labor Report]=TRUE,IF([Correct payroll]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="HMV GM Monthly checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/HMV GM Monthly checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/HMV GM Monthly checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/HMV GM Monthly checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/HMV GM Monthly checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{9A818DD2-1AA9-4E21-80AB-F064DB77E53C}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/HMV GM Monthly checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Star_x0020_Report_x0020_Review" />
+                <FieldRef Name="Set_x0020_appointments" />
+                <FieldRef Name="Associate_x0020_Celebrations" />
+                <FieldRef Name="P_x0020__x0026__x0020_L_x0020_Re" />
+                <FieldRef Name="Category" />
+                <FieldRef Name="Review_x0020__x0026__x0020_Close" />
+                <FieldRef Name="Scan_x0020_A_x002f_R_x0020_Aging" />
+                <FieldRef Name="Admin_x002f_Disputed" />
+                <FieldRef Name="Review_x0020_month" />
+                <FieldRef Name="Tax_x0020_Exempt" />
+                <FieldRef Name="Empty_x0020_Coin" />
+                <FieldRef Name="AssignedTo" />
+                <FieldRef Name="OverallConfigValue" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{4EDD687E-03E8-457D-A2E1-F52C1A727DB4}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/HMV GM Monthly checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Star_x0020_Report_x0020_Review" />
+                <FieldRef Name="Set_x0020_appointments" />
+                <FieldRef Name="Associate_x0020_Celebrations" />
+                <FieldRef Name="P_x0020__x0026__x0020_L_x0020_Re" />
+                <FieldRef Name="Category" />
+                <FieldRef Name="Review_x0020__x0026__x0020_Close" />
+                <FieldRef Name="Scan_x0020_A_x002f_R_x0020_Aging" />
+                <FieldRef Name="Admin_x002f_Disputed" />
+                <FieldRef Name="Review_x0020_month" />
+                <FieldRef Name="Tax_x0020_Exempt" />
+                <FieldRef Name="Empty_x0020_Coin" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Star Report Review" Description="Star Report Review" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a69befd8-50cd-4e1f-a75b-fbdf75f35705}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="Star_x0020_Report_x0020_Review" Name="Star_x0020_Report_x0020_Review" ColName="bit1" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Set appointments" Description="Set appointments to conduct department meetings" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9becca9b-24e5-4d01-a4eb-b189457291e5}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="Set_x0020_appointments" Name="Set_x0020_appointments" ColName="bit2" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Associate Celebrations" Description="Associate Celebrations/ every 3 month" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{57615f09-5520-4252-8eaf-5a7e55bee32a}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="Associate_x0020_Celebrations" Name="Associate_x0020_Celebrations" ColName="bit3" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="P &amp; L Review" Description="P &amp; L Review" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1deb998b-e57e-4eb8-8e8a-e4373de5a0e5}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="P_x0020__x0026__x0020_L_x0020_Re" Name="P_x0020__x0026__x0020_L_x0020_Re" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Choice" DisplayName="Category" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{690bd19e-8c83-4260-b574-f354883d23f5}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="Category" Name="Category" ColName="nvarchar4" RowOrdinal="0">
+              <Default>Monthly</Default>
+              <CHOICES>
+                <CHOICE>Monthly</CHOICE>
+                <CHOICE>Last day of the Month</CHOICE>
+                <CHOICE>First Day of the Month</CHOICE>
+              </CHOICES>
+            </Field>
+            <Field Type="Boolean" DisplayName="Review &amp; Close out" Description="Review &amp; Close out house accounts" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1b742b20-5692-4ce8-86b7-a8246a6b3ab3}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="Review_x0020__x0026__x0020_Close" Name="Review_x0020__x0026__x0020_Close" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Scan A/R Aging" Description="Scan A/R Aging to corporate by 12:00" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4a170879-f25c-40c7-bf44-d325fd34d961}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="Scan_x0020_A_x002f_R_x0020_Aging" Name="Scan_x0020_A_x002f_R_x0020_Aging" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Admin/Disputed" Description="Admin/Disputed Call Write off" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e9997cab-8057-4fe7-86e4-119c294a8482}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="Admin_x002f_Disputed" Name="Admin_x002f_Disputed" ColName="bit7" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Review month" Description="Review month to date daily report figures." EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{d9f07fc5-17e1-4f17-af77-2f5f5ace38e8}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="Review_x0020_month" Name="Review_x0020_month" ColName="bit8" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Tax Exempt" Description="Tax Exempt close out" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f8ad11da-b657-4c7a-a9ba-92be78a36e79}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="Tax_x0020_Exempt" Name="Tax_x0020_Exempt" ColName="bit9" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Empty Coin" Description="Empty Coin Laundry &amp; Post" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9e4ebab1-d03c-4cfc-8dae-1194c401f09c}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="Empty_x0020_Coin" Name="Empty_x0020_Coin" ColName="bit10" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="User" DisplayName="AssignedTo" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{3b206bcb-173a-48bd-8c1c-875aac96edc0}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="AssignedTo" Name="AssignedTo" ColName="int1" RowOrdinal="0" />
+            <Field Type="Calculated" DisplayName="OverallConfigValue" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{504ea875-3a64-4a84-9f4c-c112d5f8584d}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="OverallConfigValue" Name="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0">
+              <Formula>=IF([Admin/Disputed]=TRUE,IF([Associate Celebrations]=TRUE,IF([Empty Coin]=TRUE,IF([P &amp; L Review]=TRUE,IF([Review &amp; Close out]=TRUE,IF([Review month]=TRUE,IF([Scan A/R Aging]=TRUE,IF([Set appointments]=TRUE,IF([Star Report Review]=TRUE,IF([Tax Exempt]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field Type="Calculated" DisplayName="ChecklistStatus" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{257362d5-3f6e-48d7-a174-36b56923b899}" SourceID="{cb730ba4-b74c-4422-8e98-0e6d7fc6d49b}" StaticName="ChecklistStatus" Name="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0">
+              <Formula>=IF([Admin/Disputed]=TRUE,IF([Associate Celebrations]=TRUE,IF([Empty Coin]=TRUE,IF([P &amp; L Review]=TRUE,IF([Review &amp; Close out]=TRUE,IF([Review month]=TRUE,IF([Scan A/R Aging]=TRUE,IF([Set appointments]=TRUE,IF([Star Report Review]=TRUE,IF([Tax Exempt]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="HMV GM Weekly Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/HMV GM Weekly CHecklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/HMV GM Weekly CHecklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/HMV GM Weekly CHecklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/HMV GM Weekly CHecklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{DA22B4E8-12BE-4D59-9AF5-1363011707CA}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/HMV GM Weekly CHecklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Schedule" />
+                <FieldRef Name="Department_x0020__x0020_Meeting" />
+                <FieldRef Name="Review_x0020_Service" />
+                <FieldRef Name="Review_x0020_A_x002f_R" />
+                <FieldRef Name="Trace_x0020_All_x0020_Employee" />
+                <FieldRef Name="Review_x0020_Forecastthrough" />
+                <FieldRef Name="AssignedTo" />
+                <FieldRef Name="OverallConfigValue" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{A78F0ABD-BBFD-4E16-8403-DE2171C611AE}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/HMV GM Weekly CHecklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Schedule" />
+                <FieldRef Name="Department_x0020__x0020_Meeting" />
+                <FieldRef Name="Review_x0020_Service" />
+                <FieldRef Name="Review_x0020_A_x002f_R" />
+                <FieldRef Name="Trace_x0020_All_x0020_Employee" />
+                <FieldRef Name="Review_x0020_Forecastthrough" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Schedule" Description="Schedule: Prepare &amp; Post after GM approval" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ba1566c3-a2a2-42e0-945a-b975a3da7f58}" SourceID="{8fe19713-24ef-4c74-b326-99c90ee99b7b}" StaticName="Schedule" Name="Schedule" ColName="bit1" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Department  Meeting" Description="Department  Meeting –Go over Front desk" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{44a71728-9302-46af-b527-4b2c66b44520}" SourceID="{8fe19713-24ef-4c74-b326-99c90ee99b7b}" StaticName="Department_x0020__x0020_Meeting" Name="Department_x0020__x0020_Meeting" ColName="bit2" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Review Service" Description="Review Service Recovery Tracking" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b9277acc-9464-459d-b215-f5075dfb6ddd}" SourceID="{8fe19713-24ef-4c74-b326-99c90ee99b7b}" StaticName="Review_x0020_Service" Name="Review_x0020_Service" ColName="bit3" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Review A/R" Description="Review A/R Aging Report" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{89867816-74bc-42ad-8bd1-1f20cc6c78d9}" SourceID="{8fe19713-24ef-4c74-b326-99c90ee99b7b}" StaticName="Review_x0020_A_x002f_R" Name="Review_x0020_A_x002f_R" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Trace All Employee" Description="Trace All Employee reviews ensure timely completion" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e2053b8e-ee4c-42a9-b782-fc33109f58e3}" SourceID="{8fe19713-24ef-4c74-b326-99c90ee99b7b}" StaticName="Trace_x0020_All_x0020_Employee" Name="Trace_x0020_All_x0020_Employee" ColName="bit5" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Review Forecastthrough" Description="Review Forecastthrough K Date" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{34d00f26-3d7f-4a98-bd86-adf5d8e70652}" SourceID="{8fe19713-24ef-4c74-b326-99c90ee99b7b}" StaticName="Review_x0020_Forecastthrough" Name="Review_x0020_Forecastthrough" ColName="bit6" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="User" DisplayName="AssignedTo" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{7a9c8713-9acd-4a6a-9054-956aae4b6570}" SourceID="{8fe19713-24ef-4c74-b326-99c90ee99b7b}" StaticName="AssignedTo" Name="AssignedTo" ColName="int1" RowOrdinal="0" />
+            <Field Type="Calculated" DisplayName="OverallConfigValue" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{b046a9d3-f28a-41d3-ad50-3a0783572e0a}" SourceID="{8fe19713-24ef-4c74-b326-99c90ee99b7b}" StaticName="OverallConfigValue" Name="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0">
+              <Formula>=IF([Department  Meeting]=TRUE,IF([Review A/R]=TRUE,IF([Review Forecastthrough]=TRUE,IF([Review Service]=TRUE,IF(Schedule=TRUE,IF([Trace All Employee]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field Type="Calculated" DisplayName="ChecklistStatus" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{aa51b686-a85f-47ad-88a4-7db1e51c5985}" SourceID="{8fe19713-24ef-4c74-b326-99c90ee99b7b}" StaticName="ChecklistStatus" Name="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0">
+              <Formula>=IF([Department  Meeting]=TRUE,IF([Review A/R]=TRUE,IF([Review Forecastthrough]=TRUE,IF([Review Service]=TRUE,IF(Schedule=TRUE,IF([Trace All Employee]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="HMV GM Yearly Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/HMV GM Yearly Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/HMV GM Yearly Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/HMV GM Yearly Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/HMV GM Yearly Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{48C46A6D-F195-4354-ADE1-ADF3506EF4AC}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/HMV GM Yearly Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Budget_x0020_Preparation" />
+                <FieldRef Name="Year_x0020_End_x0020_Package" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{2E924BF5-5B7E-455C-87E6-E7CD4B1881D0}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/HMV GM Yearly Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Budget_x0020_Preparation" />
+                <FieldRef Name="Year_x0020_End_x0020_Package" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Budget Preparation" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b70d46d2-e13a-45e5-8c1b-e37f97b0821d}" SourceID="{9e39e0da-83bd-4193-9a83-1e7c118c11c6}" StaticName="Budget_x0020_Preparation" Name="Budget_x0020_Preparation" ColName="bit1" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Year End Package" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{7de99430-23e0-45d5-9dc8-dae091fe6155}" SourceID="{9e39e0da-83bd-4193-9a83-1e7c118c11c6}" StaticName="Year_x0020_End_x0020_Package" Name="Year_x0020_End_x0020_Package" ColName="bit2" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="User" DisplayName="AssignedTo" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{8cb409f9-1d96-455b-8e45-cf27995c24c5}" SourceID="{9e39e0da-83bd-4193-9a83-1e7c118c11c6}" StaticName="AssignedTo" Name="AssignedTo" ColName="int1" RowOrdinal="0" />
+            <Field Type="Calculated" DisplayName="ChecklistStatus" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{5c7e765b-95ac-4568-b263-0fc158fbc5cd}" SourceID="{9e39e0da-83bd-4193-9a83-1e7c118c11c6}" StaticName="ChecklistStatus" Name="ChecklistStatus" ColName="sql_variant1" RowOrdinal="0">
+              <Formula>=IF([Budget Preparation]=TRUE,IF([Year End Package]=TRUE,"Completed","In Progress"),"In Progress")</Formula>
+            </Field>
+          </pnp:Fields>
+        </pnp:ListInstance>
+         <pnp:ListInstance Title="Lead Cook As Needed Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Lead Cook As Needed Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Lead Cook As Needed Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Lead Cook As Needed Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Lead Cook As Needed Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{A1D9B7A6-D80D-4D9B-99AB-25E2E3975E01}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Lead Cook As Needed Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="New_x0020_Hire_x0020_Paper_x0020" />
+                <FieldRef Name="Ongoing_x0020_Training" />
+                <FieldRef Name="New_x0020_Associate_x0020_Orient" />
+                <FieldRef Name="MOD_x0020_Shifts" />
+                <FieldRef Name="Uniform_x0020_or_x0020_Nametag_x" />
+                <FieldRef Name="Distribute_x0020_Time_x0020_Card" />
+                <FieldRef Name="Hiring_x0020_and_x0020_Training" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="ChecklistStatus" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{9DC2D63E-C274-4044-875C-7C414FA33412}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/Lead Cook As Needed Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="New_x0020_Hire_x0020_Paper_x0020" />
+                <FieldRef Name="Ongoing_x0020_Training" />
+                <FieldRef Name="New_x0020_Associate_x0020_Orient" />
+                <FieldRef Name="MOD_x0020_Shifts" />
+                <FieldRef Name="Uniform_x0020_or_x0020_Nametag_x" />
+                <FieldRef Name="Distribute_x0020_Time_x0020_Card" />
+                <FieldRef Name="Hiring_x0020_and_x0020_Training" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="New Hire Paper Work to GM" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f832fbc7-21f8-42a1-97f4-9e8d04d5985c}" Name="New_x0020_Hire_x0020_Paper_x0020" Description="" SourceID="{825f9418-bce6-4926-b965-53902de03946}" StaticName="New_x0020_Hire_x0020_Paper_x0020" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Ongoing Training" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{27ea05f1-5921-412c-9f37-3094421ccc6a}" Name="Ongoing_x0020_Training" Description="" SourceID="{825f9418-bce6-4926-b965-53902de03946}" StaticName="Ongoing_x0020_Training" ColName="bit2" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="New Associate Orientation" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{900c7a7c-1dc7-4b24-a6df-6c263a18d37d}" Name="New_x0020_Associate_x0020_Orient" Description="" SourceID="{825f9418-bce6-4926-b965-53902de03946}" StaticName="New_x0020_Associate_x0020_Orient" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="MOD Shifts" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{af70a582-bb37-4a51-96ba-65132aad0ce7}" Name="MOD_x0020_Shifts" Description="" SourceID="{825f9418-bce6-4926-b965-53902de03946}" StaticName="MOD_x0020_Shifts" ColName="bit4" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Uniform or Nametag Order" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{90abc7a6-5bcf-4ea6-83ec-9c77ef3f54aa}" Name="Uniform_x0020_or_x0020_Nametag_x" Description="" SourceID="{825f9418-bce6-4926-b965-53902de03946}" StaticName="Uniform_x0020_or_x0020_Nametag_x" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Distribute Time Cards" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4d1948f2-137b-4ce5-a98a-0c0e20f854e7}" Name="Distribute_x0020_Time_x0020_Card" Description="" SourceID="{825f9418-bce6-4926-b965-53902de03946}" StaticName="Distribute_x0020_Time_x0020_Card" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Hiring and Training" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{37d6473d-113f-4c88-9273-7ac158281a22}" Name="Hiring_x0020_and_x0020_Training" Description="" SourceID="{825f9418-bce6-4926-b965-53902de03946}" StaticName="Hiring_x0020_and_x0020_Training" ColName="bit7" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{cfe2a186-2d8b-4ed7-95e5-70d19af63655}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{825f9418-bce6-4926-b965-53902de03946}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([New Hire Paper Work to GM]=TRUE,IF([Hiring and Training]=TRUE,IF([Distribute Time Cards]=TRUE,IF([Uniform or Nametag Order]=TRUE,IF([MOD Shifts]=TRUE,IF([New Associate Orientation]=TRUE,IF([Ongoing Training]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{64470895-d174-492b-9e27-a603a68f9d73}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{825f9418-bce6-4926-b965-53902de03946}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([New Hire Paper Work to GM]=TRUE,IF([Hiring and Training]=TRUE,IF([Distribute Time Cards]=TRUE,IF([Uniform or Nametag Order]=TRUE,IF([MOD Shifts]=TRUE,IF([New Associate Orientation]=TRUE,IF([Ongoing Training]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{fb102f82-a07b-47d6-abb2-356b53296569}" Name="AssignedTo" SourceID="{825f9418-bce6-4926-b965-53902de03946}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Lead Cook Daily Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Lead Cook Daily Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Lead Cook Daily Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Lead Cook Daily Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Lead Cook Daily Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{005C99D8-6C8F-4D8D-9965-2752833B459F}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Lead Cook Daily Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="_x0022_MBWA_x0022__x0020_Manage_" />
+                <FieldRef Name="Check_x0020_to_x0020_see_x0020_i" />
+                <FieldRef Name="Talk_x0020_to_x0020_Front_x0020_" />
+                <FieldRef Name="Watch_x0020_to_x0020_see_x0020_h" />
+                <FieldRef Name="Checks_x0020_dates_x0020_on_x002" />
+                <FieldRef Name="Make_x0020_sure_x0020_kitchen_x0" />
+                <FieldRef Name="Check_x0020_temp_x0020_logs_x002" />
+                <FieldRef Name="Check_x0020_Bistro_x0020_to_x002" />
+                <FieldRef Name="Go_x0020_through_x0020_Conferenc" />
+                <FieldRef Name="Price_x0020_food_x0020_for_x0020" />
+                <FieldRef Name="Put_x0020_functions_x0020_sheets" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="ChecklistStatus" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{8819414D-1C7B-4BD2-B85A-83FF9EAA61CC}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/Lead Cook Daily Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="_x0022_MBWA_x0022__x0020_Manage_" />
+                <FieldRef Name="Check_x0020_to_x0020_see_x0020_i" />
+                <FieldRef Name="Talk_x0020_to_x0020_Front_x0020_" />
+                <FieldRef Name="Watch_x0020_to_x0020_see_x0020_h" />
+                <FieldRef Name="Checks_x0020_dates_x0020_on_x002" />
+                <FieldRef Name="Make_x0020_sure_x0020_kitchen_x0" />
+                <FieldRef Name="Check_x0020_temp_x0020_logs_x002" />
+                <FieldRef Name="Check_x0020_Bistro_x0020_to_x002" />
+                <FieldRef Name="Go_x0020_through_x0020_Conferenc" />
+                <FieldRef Name="Price_x0020_food_x0020_for_x0020" />
+                <FieldRef Name="Put_x0020_functions_x0020_sheets" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="&quot;MBWA&quot; Manage by Walking Around" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{dbbada1c-537d-4f1f-83a7-f1e3967e1576}" Name="_x0022_MBWA_x0022__x0020_Manage_" Description="" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="_x0022_MBWA_x0022__x0020_Manage_" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check to see if there are any new events in for the week" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1e59eb97-14c9-491c-bb79-5c96fc71cd9f}" Name="Check_x0020_to_x0020_see_x0020_i" Description="" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="Check_x0020_to_x0020_see_x0020_i" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Talk to Front Desk to see if there has been any feed back on the Bistro food (Good or Bad)" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{83ed88b7-6570-45db-b983-47094a1e84c7}" Name="Talk_x0020_to_x0020_Front_x0020_" Description="" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="Talk_x0020_to_x0020_Front_x0020_" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Watch to see how food is being prepared by servers" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{71958e60-8ffb-451a-9489-8004fe7e2944}" Name="Watch_x0020_to_x0020_see_x0020_h" Description="" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="Watch_x0020_to_x0020_see_x0020_h" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Checks dates on all food in the Bistro making sure no food is out of date" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{8696eb02-e3e3-4e0f-873d-fa019b6f98e9}" Name="Checks_x0020_dates_x0020_on_x002" Description="" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="Checks_x0020_dates_x0020_on_x002" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Make sure kitchen is getting cleaned properly daily" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b1a8d101-dd0c-4522-8df7-691a0942becb}" Name="Make_x0020_sure_x0020_kitchen_x0" Description="" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="Make_x0020_sure_x0020_kitchen_x0" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check temp logs making sure all logs are filled out correctly" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{650268aa-9d98-47a6-ba87-e69637e409c4}" Name="Check_x0020_temp_x0020_logs_x002" Description="" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="Check_x0020_temp_x0020_logs_x002" ColName="bit7" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check Bistro to make sure there are no Maintains  needs, if so do are request or call Zach" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{2ed3ab73-7107-4ffc-940d-c96b965326c4}" Name="Check_x0020_Bistro_x0020_to_x002" Description="" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="Check_x0020_Bistro_x0020_to_x002" ColName="bit8" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Go through Conference Center  Kitchen making sure food is in date and stored properly" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b54a678f-17b7-41e8-b9c9-847782978fab}" Name="Go_x0020_through_x0020_Conferenc" Description="" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="Go_x0020_through_x0020_Conferenc" ColName="bit9" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Price food for Events" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{938380e1-7619-40c4-890f-87e6f3cb315c}" Name="Price_x0020_food_x0020_for_x0020" Description="" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="Price_x0020_food_x0020_for_x0020" ColName="bit10" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Put functions sheets together and hanging them up" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{03eb8f81-2b22-4841-b986-26be83dae587}" Name="Put_x0020_functions_x0020_sheets" Description="" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="Put_x0020_functions_x0020_sheets" ColName="bit11" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{8d395f91-a226-43fe-a588-0929aae108ce}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF(["MBWA" Manage by Walking Around]=TRUE,IF([Put functions sheets together and hanging them up]=TRUE,IF([Price food for Events]=TRUE,IF([Go through Conference Center  Kitchen making sure food is in date and stored properly]=TRUE,IF([Check Bistro to make sure there are no Maintains  needs, if so do are request or call Zach]=TRUE,IF([Check temp logs making sure all logs are filled out correctly]=TRUE,IF([Make sure kitchen is getting cleaned properly daily]=TRUE,IF([Checks dates on all food in the Bistro making sure no food is out of date]=TRUE,IF([Watch to see how food is being prepared by servers]=TRUE,IF([Talk to Front Desk to see if there has been any feed back on the Bistro food (Good or Bad)]=TRUE,IF([Check to see if there are any new events in for the week]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{a58a7561-2d70-407d-a68a-a0c1c7ffb6f8}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF(["MBWA" Manage by Walking Around]=TRUE,IF([Put functions sheets together and hanging them up]=TRUE,IF([Price food for Events]=TRUE,IF([Go through Conference Center  Kitchen making sure food is in date and stored properly]=TRUE,IF([Check Bistro to make sure there are no Maintains  needs, if so do are request or call Zach]=TRUE,IF([Check temp logs making sure all logs are filled out correctly]=TRUE,IF([Make sure kitchen is getting cleaned properly daily]=TRUE,IF([Checks dates on all food in the Bistro making sure no food is out of date]=TRUE,IF([Watch to see how food is being prepared by servers]=TRUE,IF([Talk to Front Desk to see if there has been any feed back on the Bistro food (Good or Bad)]=TRUE,IF([Check to see if there are any new events in for the week]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{c517fbb8-c220-4cc3-80f3-b4e5a4916923}" Name="AssignedTo" SourceID="{985b4fbe-02ce-44dc-b940-ee73ba619253}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Lead Cook Monthly Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Lead Cook Monthly Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Lead Cook Monthly Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Lead Cook Monthly Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Lead Cook Monthly Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{813A3DFD-9002-4FB5-B776-86E5CB17E92F}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Lead Cook Monthly Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Inventory_x0020_in_x0020_Bistro" />
+                <FieldRef Name="Associate_x0020_Celebrations_x00" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="ChecklistStatus" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{054A88B9-4B66-49C0-81B6-890FE50EBD5A}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/Lead Cook Monthly Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Inventory_x0020_in_x0020_Bistro" />
+                <FieldRef Name="Associate_x0020_Celebrations_x00" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Inventory in Bistro" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a3846d26-0200-4130-bf7f-471bf60b3981}" Name="Inventory_x0020_in_x0020_Bistro" Description="" SourceID="{4eeb2f08-e194-4a2c-879c-e8a8a158f883}" StaticName="Inventory_x0020_in_x0020_Bistro" ColName="bit1" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Associate Celebrations or every 3 month help plan" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1533a68f-9784-486c-97d9-5488fb13d991}" Name="Associate_x0020_Celebrations_x00" Description="" SourceID="{4eeb2f08-e194-4a2c-879c-e8a8a158f883}" StaticName="Associate_x0020_Celebrations_x00" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{f07c3b95-b762-4699-8d36-477bf91dc4f5}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{4eeb2f08-e194-4a2c-879c-e8a8a158f883}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Inventory in Bistro]=TRUE,IF([Associate Celebrations or every 3 month help plan]=TRUE,"YES","NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{6627dea2-66e4-4adc-b87d-271ae9c1e4d4}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{4eeb2f08-e194-4a2c-879c-e8a8a158f883}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Inventory in Bistro]=TRUE,IF([Associate Celebrations or every 3 month help plan]=TRUE,"Completed","In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{bd7452e8-805a-4da4-b7eb-70e4912b7c86}" Name="AssignedTo" SourceID="{4eeb2f08-e194-4a2c-879c-e8a8a158f883}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Lead Cook Weekly Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Lead Cook Weekly Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Lead Cook Weekly Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Lead Cook Weekly Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Lead Cook Weekly Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{F3DDEEC3-210F-4C10-A68C-5DB126F857AF}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Lead Cook Weekly Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Place_x0020_food_x0020_order" />
+                <FieldRef Name="Staff_x0020_Meeting_x0020_go_x00" />
+                <FieldRef Name="Go_x0020_over_x0020_any_x0020_ch" />
+                <FieldRef Name="GSS_x0020_Meeting" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="ChecklistStatus" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{70D1EFB2-E81D-4120-8FB0-B509FD1D5DEE}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/Lead Cook Weekly Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Place_x0020_food_x0020_order" />
+                <FieldRef Name="Staff_x0020_Meeting_x0020_go_x00" />
+                <FieldRef Name="Go_x0020_over_x0020_any_x0020_ch" />
+                <FieldRef Name="GSS_x0020_Meeting" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Place food order" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{dd752a79-d51d-45a2-af21-743c02597dfc}" Name="Place_x0020_food_x0020_order" Description="" SourceID="{9fe28a4b-6fcf-4ac8-b890-3a908dec82c7}" StaticName="Place_x0020_food_x0020_order" ColName="bit1" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Staff Meeting go over Functions" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{67d3c476-5562-4bb3-9b22-83f5397df67a}" Name="Staff_x0020_Meeting_x0020_go_x00" Description="" SourceID="{9fe28a4b-6fcf-4ac8-b890-3a908dec82c7}" StaticName="Staff_x0020_Meeting_x0020_go_x00" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Go over any changes with Staff for the week" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{95fd6f95-fcd4-4a0d-ae51-58cb64a0fe6b}" Name="Go_x0020_over_x0020_any_x0020_ch" Description="" SourceID="{9fe28a4b-6fcf-4ac8-b890-3a908dec82c7}" StaticName="Go_x0020_over_x0020_any_x0020_ch" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="GSS Meeting" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{55556fbf-8a9d-40e9-9157-801f9bfcff6d}" Name="GSS_x0020_Meeting" Description="" SourceID="{9fe28a4b-6fcf-4ac8-b890-3a908dec82c7}" StaticName="GSS_x0020_Meeting" ColName="bit4" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{01035f28-4b3d-4c5d-a9b3-67c726e13e6b}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{9fe28a4b-6fcf-4ac8-b890-3a908dec82c7}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Place food order]=TRUE,IF([GSS Meeting]=TRUE,IF([Go over any changes with Staff for the week]=TRUE,IF([Staff Meeting go over Functions]=TRUE,"YES","NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{2262aaf8-a3ac-43fc-b995-c24cb2766bbe}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{9fe28a4b-6fcf-4ac8-b890-3a908dec82c7}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Place food order]=TRUE,IF([GSS Meeting]=TRUE,IF([Go over any changes with Staff for the week]=TRUE,IF([Staff Meeting go over Functions]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{5ad5d499-9c9f-4347-b224-a0ce109376e8}" Name="AssignedTo" SourceID="{9fe28a4b-6fcf-4ac8-b890-3a908dec82c7}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Lead Cook Yearly Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Lead Cook Yearly Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Lead Cook Yearly Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Lead Cook Yearly Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Lead Cook Yearly Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{8550E8D9-CBBC-4A01-AC7F-F554457D41F0}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Lead Cook Yearly Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Change_x0020_or_x0020_add_x0020_" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="ChecklistStatus" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{1E908257-9047-4DAD-ADB8-ABC2C5055A58}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/Lead Cook Yearly Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Change_x0020_or_x0020_add_x0020_" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Change or add to Conference Center Menu" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{03cd4610-db3e-43f0-8a7b-6d902424e8f8}" Name="Change_x0020_or_x0020_add_x0020_" Description="" SourceID="{4c050f1f-0756-4e9f-a856-9bd4472cff27}" StaticName="Change_x0020_or_x0020_add_x0020_" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{d86f5b40-73af-4567-8a5c-d33324ac725e}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{4c050f1f-0756-4e9f-a856-9bd4472cff27}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Change or add to Conference Center Menu]=TRUE,"YES","NO")</Formula>
+            </Field>
+            <Field ID="{66e7492c-63fe-4fe3-a912-937fa2ee839c}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{4c050f1f-0756-4e9f-a856-9bd4472cff27}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Change or add to Conference Center Menu]=TRUE,"Completed","In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{2944409b-d31e-46a3-93d4-d36167302a61}" Name="AssignedTo" SourceID="{4c050f1f-0756-4e9f-a856-9bd4472cff27}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

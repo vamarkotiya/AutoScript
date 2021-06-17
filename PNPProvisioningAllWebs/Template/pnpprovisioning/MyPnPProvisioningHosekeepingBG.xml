@@ -1,0 +1,1288 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.14.1910.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4850716ECCB541B2955B4C6AB6428992">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4850716ECCB541B2955B4C6AB6428992" Version="1" BaseSiteTemplate="STS#3" Scope="Web">
+      <pnp:Lists>
+        <pnp:ListInstance Title="AM Houseman Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/AM Houseman Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/AM Houseman Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/AM Houseman Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/AM Houseman Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{547FD1F7-9B24-44EA-887B-5AE8FFD7CA14}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/AM Houseman Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Get Started- Keep in close communication" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{102b0832-31ea-4069-819e-f4f04c8f6872}" Name="Get_x0020_Started_x002d__x0020_K" Description="With the front desk through the entire shift" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Get_x0020_Started_x002d__x0020_K" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get Started- Get a walkie-talkie from desk" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1999b161-7a59-4d81-859c-ce5bc1a1c3f5}" Name="Get_x0020_Started_x002d__x0020_G" Description="Test to make sure you can communicate." SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Get_x0020_Started_x002d__x0020_G" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get Started- Sign out House persons keys with desk clerk as a witness" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{dd2360e0-5fd5-4e84-9434-f8aed316a454}" Name="Get_x0020_Started_x002d__x0020_S" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Get_x0020_Started_x002d__x0020_S" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get Started- Check with your manager for any meetings" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{72741a69-7178-4c30-bd39-c819f29bb98f}" Name="Get_x0020_Started_x002d__x0020_C" Description="Functions or special assignments" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Get_x0020_Started_x002d__x0020_C" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Clean all glass windows and window sills" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f3861444-cbac-41c4-a9e1-99b183ae34c7}" Name="Lobby_x0020_Area_x002d__x0020_Cl" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Lobby_x0020_Area_x002d__x0020_Cl" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Clean alt glass doors at every hotel entrance" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f7568405-0e91-4b53-8432-f89ea1a9264b}" Name="Lobby_x0020_Area_x002d__x0020_Cl0" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Lobby_x0020_Area_x002d__x0020_Cl0" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Check the general conditions of the Lobbies" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{319a9995-8eb9-405f-b973-c45c28b9bf15}" Name="Lobby_x0020_Area_x002d__x0020_Ch" Description="Aviation or Pre-Function. cleanand pick up as necessary." SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Lobby_x0020_Area_x002d__x0020_Ch" ColName="bit7" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Vacuum and LIGHTLY spray with air freshener the Lobbies" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{3e2a1333-5794-48a1-b509-a29efdfea2fc}" Name="Lobby_x0020_Area_x002d__x0020_Va" Description="Aviation and Pre-Function" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Lobby_x0020_Area_x002d__x0020_Va" ColName="bit8" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Empty trash cans and replace the liners wipe down all pictures of the Lobbies" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9c0972d2-0f2e-46bf-8193-48b2d0a2c933}" Name="Lobby_x0020_Area_x002d__x0020_Em" Description="Aviation and Pre-Function" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Lobby_x0020_Area_x002d__x0020_Em" ColName="bit9" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Clean up and check the general condition the Courtyard area" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f3574801-caf4-4ae1-86de-41323ceed622}" Name="Lobby_x0020_Area_x002d__x0020_Cl1" Description="Clean and pick up as necessary" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Lobby_x0020_Area_x002d__x0020_Cl1" ColName="bit10" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Clean all of the surfaces in the lobby" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{efc1b527-756b-440b-8b2d-1392667cc555}" Name="Lobby_x0020_Area_x002d__x0020_Cl2" Description="Wipe off all house phones" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Lobby_x0020_Area_x002d__x0020_Cl2" ColName="bit11" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Vacuum Entrance and Courtyard Mats" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5faafc36-21ca-46b4-ae18-8db116e83795}" Name="Lobby_x0020_Area_x002d__x0020_Va0" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Lobby_x0020_Area_x002d__x0020_Va0" ColName="bit12" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="The Market- Empty trash and replace liner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{3b03a5a6-8fa0-459e-8bb9-9edc5ffbcf6e}" Name="The_x0020_Market_x002d__x0020_Em" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="The_x0020_Market_x002d__x0020_Em" ColName="bit13" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Sweep and mop the lobby and hallway floors" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{675b5cc3-620f-4a9c-9c98-8f85b8ed0c47}" Name="Sweep_x0020_and_x0020_mop_x0020_" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Sweep_x0020_and_x0020_mop_x0020_" ColName="bit14" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Clean the mirrors sinks and counter top" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ddb9cc52-0315-43b8-b395-698ff7aac53a}" Name="Public_x0020_Bathrooms_x0020__x0" Description="Make sure that there are no smudges." SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Public_x0020_Bathrooms_x0020__x0" ColName="bit15" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Clean the toilets and urinal" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5a7f26ef-1952-4c6d-826e-6e4650494208}" Name="Public_x0020_Bathrooms_x0020__x00" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Public_x0020_Bathrooms_x0020__x00" ColName="bit16" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Restock the items" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e04de9b6-c8c4-45e8-bc85-2c7e1599924b}" Name="Public_x0020_Bathrooms_x0020__x01" Description="Items like paper towels, toilet tissue, hand soap, and seat covers." SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Public_x0020_Bathrooms_x0020__x01" ColName="bit17" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Wipe Chrome paper holder trashcan and stall trashcans with Eco" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{8a8bf73c-1297-4c54-a8cd-f434b18d87d2}" Name="Public_x0020_Bathrooms_x0020__x02" Description="Make sure that there are no streaks." SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Public_x0020_Bathrooms_x0020__x02" ColName="bit18" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Clean doors and handles" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{63d24b56-e3db-4a94-b852-8175c02f27fe}" Name="Public_x0020_Bathrooms_x0020__x03" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Public_x0020_Bathrooms_x0020__x03" ColName="bit19" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms- Remember to keep restocking and cleaning the conference center bathrooms" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f07250a5-4e63-44b1-8d0f-5a5421726fdd}" Name="Public_x0020_Bathrooms_x002d__x0" Description="if there is an event" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Public_x0020_Bathrooms_x002d__x0" ColName="bit20" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Sweep and mop and dry floors" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4c011010-e400-479d-bf02-dcbbab41b0a3}" Name="Public_x0020_Bathrooms_x0020__x04" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Public_x0020_Bathrooms_x0020__x04" ColName="bit21" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Dust and wipe down all equipment with sanitizer" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{09d54cf3-7076-4cbd-84d4-06f16c49295f}" Name="Exercise_x0020_Room_x002d__x0020" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Exercise_x0020_Room_x002d__x0020" ColName="bit22" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Clean the television and phone in the exercise room" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9b7570bf-0a14-45b6-8db4-3968596f9cab}" Name="Exercise_x0020_Room_x002d__x00200" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Exercise_x0020_Room_x002d__x00200" ColName="bit23" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Clean the windows windows sills, door and mirror" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{15154d93-a1e3-434f-8933-bb4455524c37}" Name="Exercise_x0020_Room_x002d__x00201" Description="Make sure that there are no streaks." SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Exercise_x0020_Room_x002d__x00201" ColName="bit24" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Empty trash and replace finer" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9138c90c-8611-42f1-a7b8-441279587982}" Name="Exercise_x0020_Room_x002d__x00202" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Exercise_x0020_Room_x002d__x00202" ColName="bit25" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Empty the hamper and take dirty towels to the laundry" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{cc0fffd4-98aa-488a-a4fa-5952a3983eea}" Name="Exercise_x0020_Room_x002d__x00203" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Exercise_x0020_Room_x002d__x00203" ColName="bit26" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Clean Water Dispenser" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{38eff33c-a680-470e-96ab-1c6b8ee1f8bf}" Name="Exercise_x0020_Room_x002d__x00204" Description="Refill cups and water when necessary" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Exercise_x0020_Room_x002d__x00204" ColName="bit27" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room - Make sure that the hand towels are folded and repienished" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a3e0ccc1-3c4f-467b-90bd-47d0100e5e94}" Name="Exercise_x0020_Room_x0020__x002d" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Exercise_x0020_Room_x0020__x002d" ColName="bit28" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room - Vacuum Carpet and Spray with air fresh only if there is no guest exercising" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4a758b22-7a94-4512-aabb-2cd0d2e29915}" Name="Exercise_x0020_Room_x0020__x002d0" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Exercise_x0020_Room_x0020__x002d0" ColName="bit29" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Straighten and wipe down pool furniture" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4ea11840-54fb-436a-aeca-80e0c818660c}" Name="Pool_x0020_Area_x002d__x0020_Str" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Pool_x0020_Area_x002d__x0020_Str" ColName="bit30" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Clean all the windows and window sills" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{fa8a9148-6d71-498a-a307-0904ba174868}" Name="Pool_x0020_Area_x002d__x0020_Cle" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Pool_x0020_Area_x002d__x0020_Cle" ColName="bit31" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Wipe raillings going into pool and spa with Eco Shine" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b18b1f9c-0660-46a1-b93a-5b6c137a256b}" Name="Pool_x0020_Area_x002d__x0020_Wip" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Pool_x0020_Area_x002d__x0020_Wip" ColName="bit32" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Empty ail trashcans and replace liners" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{3091d22b-a1fc-4da2-badd-fbf51850f167}" Name="Pool_x0020_Area_x002d__x0020_Emp" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Pool_x0020_Area_x002d__x0020_Emp" ColName="bit33" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Vacuum and Straighten Side door mats" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9ee94526-bba2-4a44-baae-3a2bb1357c87}" Name="Pool_x0020_Area_x002d__x0020_Vac" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Pool_x0020_Area_x002d__x0020_Vac" ColName="bit34" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Restock pool towels until shelf is full" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{41b7945c-d2c9-4110-902f-f2b7b984668d}" Name="Pool_x0020_Area_x002d__x0020_Res" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Pool_x0020_Area_x002d__x0020_Res" ColName="bit35" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Empty hamper and take dirty towels to laundry" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{37e679dd-b1b1-4feb-a164-e377135729dc}" Name="Pool_x0020_Area_x002d__x0020_Emp0" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Pool_x0020_Area_x002d__x0020_Emp0" ColName="bit36" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{d658917f-3de4-4a07-971c-88a95219d156}" Type="Calculated" ResultType="Text" Name="OverallConfigValue1" DisplayName="OverallConfigValue1" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="OverallConfigValue1" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([Get Started- Keep in close communication]=TRUE,IF([Pool Area- Empty hamper and take dirty towels to laundry]=TRUE,IF([Pool Area- Restock pool towels until shelf is full]=TRUE,IF([Pool Area- Vacuum and Straighten Side door mats]=TRUE,IF([Pool Area- Empty ail trashcans and replace liners]=TRUE,IF([Pool Area- Wipe raillings going into pool and spa with Eco Shine]=TRUE,IF([Pool Area- Clean all the windows and window sills]=TRUE,IF([Pool Area- Straighten and wipe down pool furniture]=TRUE,IF([Exercise Room - Vacuum Carpet and Spray with air fresh only if there is no guest exercising]=TRUE,IF([Exercise Room - Make sure that the hand towels are folded and repienished]=TRUE,IF([Exercise Room- Clean Water Dispenser]=TRUE,IF([Exercise Room- Empty the hamper and take dirty towels to the laundry]=TRUE,IF([Exercise Room- Empty trash and replace finer]=TRUE,IF([Exercise Room- Clean the windows windows sills, door and mirror]=TRUE,IF([Exercise Room- Clean the television and phone in the exercise room]=TRUE,IF([Exercise Room- Dust and wipe down all equipment with sanitizer]=TRUE,IF([Public Bathrooms - Sweep and mop and dry floors]=TRUE,IF([Public Bathrooms- Remember to keep restocking and cleaning the conference center bathrooms]=TRUE,IF([Public Bathrooms - Clean doors and handles]=TRUE,IF([Public Bathrooms - Wipe Chrome paper holder trashcan and stall trashcans with Eco]=TRUE,IF([Public Bathrooms - Restock the items]=TRUE,IF([Public Bathrooms - Clean the toilets and urinal]=TRUE,IF([Public Bathrooms - Clean the mirrors sinks and counter top]=TRUE,IF([Sweep and mop the lobby and hallway floors]=TRUE,IF([The Market- Empty trash and replace liner]=TRUE,IF([Lobby Area- Vacuum Entrance and Courtyard Mats]=TRUE,IF([Lobby Area- Clean all of the surfaces in the lobby]=TRUE,IF([Lobby Area- Clean up and check the general condition the Courtyard area]=TRUE,IF([Lobby Area- Empty trash cans and replace the liners wipe down all pictures of the Lobbies]=TRUE,IF([Lobby Area- Vacuum and LIGHTLY spray with air freshener the Lobbies]=TRUE,IF([Lobby Area- Check the general conditions of the Lobbies]=TRUE,IF([Lobby Area- Clean alt glass doors at every hotel entrance]=TRUE,IF([Lobby Area- Clean all glass windows and window sills]=TRUE,IF([Get Started- Check with your manager for any meetings]=TRUE,IF([Get Started- Sign out House persons keys with desk clerk as a witness]=TRUE,IF([Get Started- Get a walkie-talkie from desk]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{08091229-7b0a-490e-a11f-7ed01edcf789}" Type="Calculated" ResultType="Text" Name="ChecklistStatus1" DisplayName="Checklist Status1" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="ChecklistStatus1" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([Get Started- Keep in close communication]=TRUE,IF([Pool Area- Empty hamper and take dirty towels to laundry]=TRUE,IF([Pool Area- Restock pool towels until shelf is full]=TRUE,IF([Pool Area- Vacuum and Straighten Side door mats]=TRUE,IF([Pool Area- Empty ail trashcans and replace liners]=TRUE,IF([Pool Area- Wipe raillings going into pool and spa with Eco Shine]=TRUE,IF([Pool Area- Clean all the windows and window sills]=TRUE,IF([Pool Area- Straighten and wipe down pool furniture]=TRUE,IF([Exercise Room - Vacuum Carpet and Spray with air fresh only if there is no guest exercising]=TRUE,IF([Exercise Room - Make sure that the hand towels are folded and repienished]=TRUE,IF([Exercise Room- Clean Water Dispenser]=TRUE,IF([Exercise Room- Empty the hamper and take dirty towels to the laundry]=TRUE,IF([Exercise Room- Empty trash and replace finer]=TRUE,IF([Exercise Room- Clean the windows windows sills, door and mirror]=TRUE,IF([Exercise Room- Clean the television and phone in the exercise room]=TRUE,IF([Exercise Room- Dust and wipe down all equipment with sanitizer]=TRUE,IF([Public Bathrooms - Sweep and mop and dry floors]=TRUE,IF([Public Bathrooms- Remember to keep restocking and cleaning the conference center bathrooms]=TRUE,IF([Public Bathrooms - Clean doors and handles]=TRUE,IF([Public Bathrooms - Wipe Chrome paper holder trashcan and stall trashcans with Eco]=TRUE,IF([Public Bathrooms - Restock the items]=TRUE,IF([Public Bathrooms - Clean the toilets and urinal]=TRUE,IF([Public Bathrooms - Clean the mirrors sinks and counter top]=TRUE,IF([Sweep and mop the lobby and hallway floors]=TRUE,IF([The Market- Empty trash and replace liner]=TRUE,IF([Lobby Area- Vacuum Entrance and Courtyard Mats]=TRUE,IF([Lobby Area- Clean all of the surfaces in the lobby]=TRUE,IF([Lobby Area- Clean up and check the general condition the Courtyard area]=TRUE,IF([Lobby Area- Empty trash cans and replace the liners wipe down all pictures of the Lobbies]=TRUE,IF([Lobby Area- Vacuum and LIGHTLY spray with air freshener the Lobbies]=TRUE,IF([Lobby Area- Check the general conditions of the Lobbies]=TRUE,IF([Lobby Area- Clean alt glass doors at every hotel entrance]=TRUE,IF([Lobby Area- Clean all glass windows and window sills]=TRUE,IF([Get Started- Check with your manager for any meetings]=TRUE,IF([Get Started- Sign out House persons keys with desk clerk as a witness]=TRUE,IF([Get Started- Get a walkie-talkie from desk]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{4c920dd1-1eb6-499b-a2ee-1d1fa94e750c}" Name="AssignedTo" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean windows and sills" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f75e52a8-45cc-4490-a251-3458426738e8}" Name="Floor_x0020_Hallways_x002d__x002" Description="Adjust curtain at the end of the halls neatly" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Floor_x0020_Hallways_x002d__x002" ColName="bit37" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean House phones" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{8da2f5cb-d26f-4f5a-b83f-e3145b44f179}" Name="Floor_x0020_Hallways_x002d__x0020" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Floor_x0020_Hallways_x002d__x0020" ColName="bit38" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean inside and outside of all exit doors" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e04021aa-cc33-4046-bdef-b8a11d0959d1}" Name="Floor_x0020_Hallways_x002d__x0021" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Floor_x0020_Hallways_x002d__x0021" ColName="bit39" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean all storage room doors on all floors" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{56944f6e-e83a-48a6-9e42-58e60d346c0f}" Name="Floor_x0020_Hallways_x002d__x0022" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Floor_x0020_Hallways_x002d__x0022" ColName="bit40" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Empty trash and replace liner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{c3af278e-919e-4949-b45d-46c7649ef01d}" Name="Floor_x0020_Hallways_x002d__x0023" Description="Wipe of spills on trash cans on ail floors" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Floor_x0020_Hallways_x002d__x0023" ColName="bit41" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean and Polish lce machines on each floor" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{7f02329e-2656-4d50-90df-32e5724d7dfc}" Name="Floor_x0020_Hallways_x002d__x0024" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Floor_x0020_Hallways_x002d__x0024" ColName="bit42" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Elevators- Wipe all stainless steel with Eco shine" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{92c5481b-7b06-463c-ba1a-752f60bc4ff1}" Name="Elevators_x002d__x0020_Wipe_x002" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Elevators_x002d__x0020_Wipe_x002" ColName="bit43" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Elevators- Clean threshold grooves and clean ceiling panels of any bugs or dust that is collected" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{37564f6b-4108-431c-b240-6632b143642f}" Name="Elevators_x002d__x0020_Clean_x00" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Elevators_x002d__x0020_Clean_x00" ColName="bit44" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Elevators- Clean floors with the mop in the AGM 5 office" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{30212306-1b8d-42fd-aec6-a456441811f5}" Name="Elevators_x002d__x0020_Clean_x000" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Elevators_x002d__x0020_Clean_x000" ColName="bit45" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Wipe down washers and dryers" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{d910d07d-a6cd-4bfd-976d-bc1aac69fdd9}" Name="Guest_x0020_Laundry_x002d__x0020" Description=" INSIDE and Out dust shelves" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Guest_x0020_Laundry_x002d__x0020" ColName="bit46" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Clean lint traps in washer and dryer" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{bf107f65-795e-47a7-8eac-bfdf874a9d51}" Name="Guest_x0020_Laundry_x002d__x00200" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Guest_x0020_Laundry_x002d__x00200" ColName="bit47" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Clean Picture with glass cleaner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{891f8181-4787-4beb-bbd8-515d0dd72c57}" Name="Guest_x0020_Laundry_x002d__x00201" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Guest_x0020_Laundry_x002d__x00201" ColName="bit48" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Empty trash and replace liner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5e42bea8-7421-425e-b6f1-f14a45ed9aaa}" Name="Guest_x0020_Laundry_x002d__x00202" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Guest_x0020_Laundry_x002d__x00202" ColName="bit49" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Clean behind the washer and dryer" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{c4fa768b-3dd7-4d36-9ce0-6aeda446cf8e}" Name="Guest_x0020_Laundry_x002d__x00203" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Guest_x0020_Laundry_x002d__x00203" ColName="bit50" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Sweep and mop floor" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{fc1eab84-3f77-4bde-b984-b87b63c5a54e}" Name="Guest_x0020_Laundry_x002d__x00204" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Guest_x0020_Laundry_x002d__x00204" ColName="bit51" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Miscellaneous- Broom sweep stairwells" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4074d41d-757c-450a-b975-d5b138417e7e}" Name="Miscellaneous_x002d__x0020_Broom" Description="Vacuum side entrances and side entrance mats" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Miscellaneous_x002d__x0020_Broom" ColName="bit52" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Miscellaneous- Empty trash at Front Desk" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{8d245d30-5317-4f63-8809-f61506dbc40b}" Name="Miscellaneous_x002d__x0020_Empty" Description="Back office GM AGM and Sales offices and replace liners" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Miscellaneous_x002d__x0020_Empty" ColName="bit53" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Miscellaneous- Vacuum Back office" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{90e93d10-deb5-4e49-8648-8a0135c91597}" Name="Miscellaneous_x002d__x0020_Vacuu" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Miscellaneous_x002d__x0020_Vacuu" ColName="bit54" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Patrol the exterior of the property at least three times" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a0dc1c2d-b0c6-43c5-8051-2e4010385bc6}" Name="Outdoor_x002d__x0020_Patrol_x002" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Outdoor_x002d__x0020_Patrol_x002" ColName="bit55" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor - Sweep sidewalk up to front entrance and pick up all cigarette butts" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{97399e8c-a97e-443d-b92f-4030559766fe}" Name="Outdoor_x0020__x002d__x0020_Swee" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Outdoor_x0020__x002d__x0020_Swee" ColName="bit56" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Collect all dispose of any trash" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b37828c5-8949-4ab8-b337-127e4646ec1a}" Name="Outdoor_x002d__x0020_Collect_x00" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Outdoor_x002d__x0020_Collect_x00" ColName="bit57" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Wipe off entrance trash cans clean out ashtray and replace liner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1c7f9b95-6878-412c-a39f-adefb0be05a3}" Name="Outdoor_x002d__x0020_Wipe_x0020_" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Outdoor_x002d__x0020_Wipe_x0020_" ColName="bit58" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Sweep patio and sidewalk outside pool area" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5698b2ae-341b-41b2-a530-f29eb1faee43}" Name="Outdoor_x002d__x0020_Sweep_x0020" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Outdoor_x002d__x0020_Sweep_x0020" ColName="bit59" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Finishing Up- Sign back in keys with desk and return radio" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5984e160-df4f-4316-8ad4-b05c3a01daa4}" Name="Finishing_x0020_Up_x002d__x0020_" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Finishing_x0020_Up_x002d__x0020_" ColName="bit60" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Finishing Up- Please complete checklist" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{c61c3469-f6cb-4f9d-8965-c509d0f0d9b1}" Name="Finishing_x0020_Up_x002d__x0020_0" Description="Leave this checklist along with any notes in Executive Housekeepers mailbox" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Finishing_x0020_Up_x002d__x0020_0" ColName="bit61" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Finishing Up- Do not leave before scheduled shift ends" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b188c91c-8022-4e78-8eaf-f29059e95108}" Name="Finishing_x0020_Up_x002d__x0020_1" Description="" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="Finishing_x0020_Up_x002d__x0020_1" ColName="bit62" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{f0d54cb4-3b42-4154-9c64-d156bd4f22c6}" Type="Calculated" ResultType="Text" Name="OverallConfigValue2" DisplayName="OverallConfigValue2" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="OverallConfigValue2" ColName="sql_variant3" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([Floor Hallways- Clean windows and sills]=TRUE,IF([Finishing Up- Do not leave before scheduled shift ends]=TRUE,IF([Finishing Up- Please complete checklist]=TRUE,IF([Finishing Up- Sign back in keys with desk and return radio]=TRUE,IF([Outdoor- Sweep patio and sidewalk outside pool area]=TRUE,IF([Outdoor- Wipe off entrance trash cans clean out ashtray and replace liner]=TRUE,IF([Outdoor- Collect all dispose of any trash]=TRUE,IF([Outdoor - Sweep sidewalk up to front entrance and pick up all cigarette butts]=TRUE,IF([Outdoor- Patrol the exterior of the property at least three times]=TRUE,IF([Miscellaneous- Vacuum Back office]=TRUE,IF([Miscellaneous- Empty trash at Front Desk]=TRUE,IF([Miscellaneous- Broom sweep stairwells]=TRUE,IF([Guest Laundry- Sweep and mop floor]=TRUE,IF([Guest Laundry- Clean behind the washer and dryer]=TRUE,IF([Guest Laundry- Empty trash and replace liner]=TRUE,IF([Guest Laundry- Clean Picture with glass cleaner]=TRUE,IF([Guest Laundry- Clean lint traps in washer and dryer]=TRUE,IF([Guest Laundry- Wipe down washers and dryers]=TRUE,IF([Elevators- Clean floors with the mop in the AGM 5 office]=TRUE,IF([Elevators- Clean threshold grooves and clean ceiling panels of any bugs or dust that is collected]=TRUE,IF([Elevators- Wipe all stainless steel with Eco shine]=TRUE,IF([Floor Hallways- Clean and Polish lce machines on each floor]=TRUE,IF([Floor Hallways- Empty trash and replace liner]=TRUE,IF([Floor Hallways- Clean all storage room doors on all floors]=TRUE,IF([Floor Hallways- Clean inside and outside of all exit doors]=TRUE,IF([Floor Hallways- Clean House phones]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{d722fd68-db2c-4d59-ac28-a80b8194d209}" Type="Calculated" ResultType="Text" Name="ChecklistStatus2" DisplayName="Checklist Status2" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="ChecklistStatus2" ColName="sql_variant4" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([Floor Hallways- Clean windows and sills]=TRUE,IF([Finishing Up- Do not leave before scheduled shift ends]=TRUE,IF([Finishing Up- Please complete checklist]=TRUE,IF([Finishing Up- Sign back in keys with desk and return radio]=TRUE,IF([Outdoor- Sweep patio and sidewalk outside pool area]=TRUE,IF([Outdoor- Wipe off entrance trash cans clean out ashtray and replace liner]=TRUE,IF([Outdoor- Collect all dispose of any trash]=TRUE,IF([Outdoor - Sweep sidewalk up to front entrance and pick up all cigarette butts]=TRUE,IF([Outdoor- Patrol the exterior of the property at least three times]=TRUE,IF([Miscellaneous- Vacuum Back office]=TRUE,IF([Miscellaneous- Empty trash at Front Desk]=TRUE,IF([Miscellaneous- Broom sweep stairwells]=TRUE,IF([Guest Laundry- Sweep and mop floor]=TRUE,IF([Guest Laundry- Clean behind the washer and dryer]=TRUE,IF([Guest Laundry- Empty trash and replace liner]=TRUE,IF([Guest Laundry- Clean Picture with glass cleaner]=TRUE,IF([Guest Laundry- Clean lint traps in washer and dryer]=TRUE,IF([Guest Laundry- Wipe down washers and dryers]=TRUE,IF([Elevators- Clean floors with the mop in the AGM 5 office]=TRUE,IF([Elevators- Clean threshold grooves and clean ceiling panels of any bugs or dust that is collected]=TRUE,IF([Elevators- Wipe all stainless steel with Eco shine]=TRUE,IF([Floor Hallways- Clean and Polish lce machines on each floor]=TRUE,IF([Floor Hallways- Empty trash and replace liner]=TRUE,IF([Floor Hallways- Clean all storage room doors on all floors]=TRUE,IF([Floor Hallways- Clean inside and outside of all exit doors]=TRUE,IF([Floor Hallways- Clean House phones]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field ID="{cbbfd772-9698-4074-a35c-ec1e9ade8ec9}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="OverallConfigValue" ColName="sql_variant5" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF(OverallConfigValue1="YES",IF(OverallConfigValue2="YES","YES","NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{d11824bc-0a82-43cc-9d76-13a29aaec7be}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{13739027-6e92-45ec-ba14-e3878918d125}" StaticName="ChecklistStatus" ColName="sql_variant6" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF(OverallConfigValue1="Completed",IF(OverallConfigValue2="Completed","Completed","In Progress"),"In Progress")</Formula>
+            </Field>
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Exec Housekeeper AS Needed Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Exec Housekeeper AS Needed Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Exec Housekeeper AS Needed Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Exec Housekeeper AS Needed Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Exec Housekeeper AS Needed Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{0AC5BBF8-C07D-4A10-8908-5879B2487455}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Exec Housekeeper AS Needed Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="New Hire Paper Work to GM" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{2c1b3ae1-2a24-477b-a47d-6b3e78ef250e}" Name="New_x0020_Hire_x0020_Paper_x0020" Description="" SourceID="{66d88baf-0937-4080-88a4-2d20033b36e4}" StaticName="New_x0020_Hire_x0020_Paper_x0020" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Ongoing Training" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{96005dc2-2e81-40e7-b814-ef4bac081a7c}" Name="Ongoing_x0020_Training" Description="" SourceID="{66d88baf-0937-4080-88a4-2d20033b36e4}" StaticName="Ongoing_x0020_Training" ColName="bit2" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="New Associate Orientation " Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5f4050ff-cf26-495b-9277-2594b8b1da46}" Name="New_x0020_Associate_x0020_Orient" Description="" SourceID="{66d88baf-0937-4080-88a4-2d20033b36e4}" StaticName="New_x0020_Associate_x0020_Orient" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="MOD Shifts" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{dd990082-94e8-4742-9129-d8ad26ef3675}" Name="MOD_x0020_Shifts" Description="" SourceID="{66d88baf-0937-4080-88a4-2d20033b36e4}" StaticName="MOD_x0020_Shifts" ColName="bit4" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Uniform or Nametag Order" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{d6f077be-6cb2-4445-b7a1-1aa8f7a3d5f5}" Name="Uniform_x0020_or_x0020_Nametag_x" Description="" SourceID="{66d88baf-0937-4080-88a4-2d20033b36e4}" StaticName="Uniform_x0020_or_x0020_Nametag_x" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Distribute Time Cards" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{22dcb044-d43e-425f-af08-b0228f0046f5}" Name="Distribute_x0020_Time_x0020_Card" Description="" SourceID="{66d88baf-0937-4080-88a4-2d20033b36e4}" StaticName="Distribute_x0020_Time_x0020_Card" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Hiring and Training" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e31f9ba4-0dd4-4aaf-b88f-3e849223bb43}" Name="Hiring_x0020_and_x0020_Training" Description="" SourceID="{66d88baf-0937-4080-88a4-2d20033b36e4}" StaticName="Hiring_x0020_and_x0020_Training" ColName="bit7" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{322fc05b-b662-4bdb-8400-7a485fb4495b}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{66d88baf-0937-4080-88a4-2d20033b36e4}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([New Hire Paper Work to GM]=TRUE,IF([Hiring and Training]=TRUE,IF([Distribute Time Cards]=TRUE,IF([Uniform or Nametag Order]=TRUE,IF([MOD Shifts]=TRUE,IF([New Associate Orientation ]=TRUE,IF([Ongoing Training]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{704886aa-2022-4a2e-a7ec-1421bf39c46f}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{66d88baf-0937-4080-88a4-2d20033b36e4}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([New Hire Paper Work to GM]=TRUE,IF([Hiring and Training]=TRUE,IF([Distribute Time Cards]=TRUE,IF([Uniform or Nametag Order]=TRUE,IF([MOD Shifts]=TRUE,IF([New Associate Orientation ]=TRUE,IF([Ongoing Training]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{bec1273d-7331-46d3-9f83-44f51776af84}" Name="AssignedTo" SourceID="{66d88baf-0937-4080-88a4-2d20033b36e4}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Exec Housekeeper Daily Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Exec Housekeeper Daily Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Exec Housekeeper Daily Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Exec Housekeeper Daily Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Exec Housekeeper Daily Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{5324AD5B-4CA7-4F1B-8340-BC982ACBC215}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Exec Housekeeper Daily Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="&quot;MBWA&quot; Manage by Walking Around" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9bfbf0b5-694d-4431-96fa-95afd2a6673f}" Name="_x0022_MBWA_x0022__x0020_Manage_" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="_x0022_MBWA_x0022__x0020_Manage_" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Checking all Vacant Ready rooms" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{0b7f8393-077d-4e58-952a-114b7bcc247c}" Name="Checking_x0020_all_x0020_Vacant_" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Checking_x0020_all_x0020_Vacant_" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Talk to Front desk to see if there were and Housekeeping problems in rooms" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{23f52d5d-d45e-4dba-82d6-5ba22aa518db}" Name="Talk_x0020_to_x0020_Front_x0020_" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Talk_x0020_to_x0020_Front_x0020_" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check behind Houseperson making sure they are getting there check list completed" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{95292b63-93db-4dbd-b97d-6afc7f481618}" Name="Check_x0020_behind_x0020_Housepe" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Check_x0020_behind_x0020_Housepe" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check all public space inside and outsideorWalking parking lot and the Hotel before you leave" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{7d230610-01d2-46c6-8365-f40f4ef82609}" Name="Check_x0020_all_x0020_public_x00" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Check_x0020_all_x0020_public_x00" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check with Banquet Manager making sure there are no Housekeeping needs" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{572ef2ae-8e93-4d92-bf91-2278a00be231}" Name="Check_x0020_with_x0020_Banquet_x" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Check_x0020_with_x0020_Banquet_x" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check all public restrooms" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e55ce232-6ae4-4448-9719-c549a34187cd}" Name="Check_x0020_all_x0020_public_x000" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Check_x0020_all_x0020_public_x000" ColName="bit7" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check with laundry making sure they are getting laundry done" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5da15db7-6df7-4193-8075-25e008d9a551}" Name="Check_x0020_with_x0020_laundry_x" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Check_x0020_with_x0020_laundry_x" ColName="bit8" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check all closets making sure they are neat and in order no food or trash" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1dc17c47-c0b6-42d6-ab98-52535c2ba820}" Name="Check_x0020_all_x0020_closets_x0" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Check_x0020_all_x0020_closets_x0" ColName="bit9" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Inspect Hotel Roomsafter housekeepers have cleaned them" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{0aee9fe1-8c89-46b2-b1ef-d197a600bd67}" Name="Inspect_x0020_Hotel_x0020_Roomsa" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Inspect_x0020_Hotel_x0020_Roomsa" ColName="bit10" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check Housekeepers carts making sure they are in order NOT messy" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{76ded8c3-ce8c-4342-84dc-4a302d93a7bb}" Name="Check_x0020_Housekeepers_x0020_c" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Check_x0020_Housekeepers_x0020_c" ColName="bit11" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check out of order roomsorRooms that have come back in order" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{85236d4a-62fe-4c0e-8803-f890f18144a5}" Name="Check_x0020_out_x0020_of_x0020_o" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Check_x0020_out_x0020_of_x0020_o" ColName="bit12" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Stock Front Desk with any Housekeeping supplies they might need" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{d9f817bb-db62-4e98-836f-901573b80e7e}" Name="Stock_x0020_Front_x0020_Desk_x00" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Stock_x0020_Front_x0020_Desk_x00" ColName="bit13" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Input any lost and found for the day" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1998f6ec-14cf-4737-8670-0628d5d2a842}" Name="Input_x0020_any_x0020_lost_x0020" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Input_x0020_any_x0020_lost_x0020" ColName="bit14" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check staff for proper uniform and engraved nametag" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b9a1d49b-af4d-477f-9176-ddd19d357688}" Name="Check_x0020_staff_x0020_for_x002" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Check_x0020_staff_x0020_for_x002" ColName="bit15" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Input dirty rooms changing them to clean or finish paperwork for the day" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{36017580-f571-4e01-8968-d698b33e2110}" Name="Input_x0020_dirty_x0020_rooms_x0" Description="" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="Input_x0020_dirty_x0020_rooms_x0" ColName="bit16" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{ab278e05-4ff4-40e6-a638-ebfe100726b1}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF(["MBWA" Manage by Walking Around]=TRUE,IF([Input dirty rooms changing them to clean or finish paperwork for the day]=TRUE,IF([Check staff for proper uniform and engraved nametag]=TRUE,IF([Input any lost and found for the day]=TRUE,IF([Stock Front Desk with any Housekeeping supplies they might need]=TRUE,IF([Check out of order roomsorRooms that have come back in order]=TRUE,IF([Check Housekeepers carts making sure they are in order NOT messy]=TRUE,IF([Inspect Hotel Roomsafter housekeepers have cleaned them]=TRUE,IF([Check all closets making sure they are neat and in order no food or trash]=TRUE,IF([Check with laundry making sure they are getting laundry done]=TRUE,IF([Check all public restrooms]=TRUE,IF([Check with Banquet Manager making sure there are no Housekeeping needs]=TRUE,IF([Check all public space inside and outsideorWalking parking lot and the Hotel before you leave]=TRUE,IF([Check behind Houseperson making sure they are getting there check list completed]=TRUE,IF([Talk to Front desk to see if there were and Housekeeping problems in rooms]=TRUE,IF([Checking all Vacant Ready rooms]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{0b7bfb44-300d-4beb-b87e-9bfc08f1aae4}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF(["MBWA" Manage by Walking Around]=TRUE,IF([Input dirty rooms changing them to clean or finish paperwork for the day]=TRUE,IF([Check staff for proper uniform and engraved nametag]=TRUE,IF([Input any lost and found for the day]=TRUE,IF([Stock Front Desk with any Housekeeping supplies they might need]=TRUE,IF([Check out of order roomsorRooms that have come back in order]=TRUE,IF([Check Housekeepers carts making sure they are in order NOT messy]=TRUE,IF([Inspect Hotel Roomsafter housekeepers have cleaned them]=TRUE,IF([Check all closets making sure they are neat and in order no food or trash]=TRUE,IF([Check with laundry making sure they are getting laundry done]=TRUE,IF([Check all public restrooms]=TRUE,IF([Check with Banquet Manager making sure there are no Housekeeping needs]=TRUE,IF([Check all public space inside and outsideorWalking parking lot and the Hotel before you leave]=TRUE,IF([Check behind Houseperson making sure they are getting there check list completed]=TRUE,IF([Talk to Front desk to see if there were and Housekeeping problems in rooms]=TRUE,IF([Checking all Vacant Ready rooms]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{11e98263-d90d-42fe-8cb7-15d139d62ad3}" Name="AssignedTo" SourceID="{2a609b2c-848d-4629-9fa3-9e78a223a67b}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Exec Housekeeper Monthly Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Exec Housekeeper Monthly Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Exec Housekeeper Monthly Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Exec Housekeeper Monthly Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Exec Housekeeper Monthly Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{818635AE-A0C0-4AB8-955F-B42F98D6D9BC}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Exec Housekeeper Monthly Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Inventory done by 7Th" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f0f27d60-8adf-42c5-a42d-ebe66fddfbbf}" Name="Inventory_x0020_done_x0020_by_x0" Description="" SourceID="{ea82f116-35ec-4a9f-94b1-316bbcc5374e}" StaticName="Inventory_x0020_done_x0020_by_x0" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Associate Celebrationsor every 3 monthhelp plan" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{0dc82569-4dc1-45e9-91ae-8515bb9800b5}" Name="Associate_x0020_Celebrationsor_x" Description="" SourceID="{ea82f116-35ec-4a9f-94b1-316bbcc5374e}" StaticName="Associate_x0020_Celebrationsor_x" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Rotate all lost and found 30, 60, 90" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f1fe3d6c-eabf-4797-b18b-bb66212cbc8f}" Name="Rotate_x0020_all_x0020_lost_x002" Description="" SourceID="{ea82f116-35ec-4a9f-94b1-316bbcc5374e}" StaticName="Rotate_x0020_all_x0020_lost_x002" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Set appointments to conduct department meetings" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f5b58578-4737-4ebf-b434-5008e69e9501}" Name="Set_x0020_appointments_x0020_to_" Description="" SourceID="{ea82f116-35ec-4a9f-94b1-316bbcc5374e}" StaticName="Set_x0020_appointments_x0020_to_" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Carpet cleaning on room that are looking bad" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ac638d2a-4d82-40f4-96b7-a6592a89d4a3}" Name="Carpet_x0020_cleaning_x0020_on_x" Description="" SourceID="{ea82f116-35ec-4a9f-94b1-316bbcc5374e}" StaticName="Carpet_x0020_cleaning_x0020_on_x" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{2a2d20b1-77fa-4052-90b1-42907bf3169e}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{ea82f116-35ec-4a9f-94b1-316bbcc5374e}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([Inventory done by 7Th]=TRUE,IF([Carpet cleaning on room that are looking bad]=TRUE,IF([Set appointments to conduct department meetings]=TRUE,IF([Rotate all lost and found 30, 60, 90]=TRUE,IF([Associate Celebrationsor every 3 monthhelp plan]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{8aa7fad2-5a14-44b9-8706-176123948e77}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{ea82f116-35ec-4a9f-94b1-316bbcc5374e}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([Inventory done by 7Th]=TRUE,IF([Carpet cleaning on room that are looking bad]=TRUE,IF([Set appointments to conduct department meetings]=TRUE,IF([Rotate all lost and found 30, 60, 90]=TRUE,IF([Associate Celebrationsor every 3 monthhelp plan]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{1070c098-42ce-4dce-9b43-622a8c6b7db2}" Name="AssignedTo" SourceID="{ea82f116-35ec-4a9f-94b1-316bbcc5374e}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Exec Housekeeper Weekly Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Exec Housekeeper Weekly Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Exec Housekeeper Weekly Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Exec Housekeeper Weekly Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Exec Housekeeper Weekly Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{19ABC71B-F963-4650-ADB1-16FDB69D22E0}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Exec Housekeeper Weekly Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Schedule- Prepare and Post after GM approval" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{d37122f4-ed22-4278-bbb7-d9bb2fabcc63}" Name="Schedule_x002d__x0020_Prepare_x0" Description="" SourceID="{aa1cad41-64fe-40bb-a007-47703b3483eb}" StaticName="Schedule_x002d__x0020_Prepare_x0" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Review Service Recovery Tracking" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{c17a01df-8502-4465-b294-fd99d22a6620}" Name="Review_x0020_Service_x0020_Recov" Description="" SourceID="{aa1cad41-64fe-40bb-a007-47703b3483eb}" StaticName="Review_x0020_Service_x0020_Recov" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Trace All Employee reviews ensure timely completion" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{627c79d6-ce6e-4a40-b72d-c75ff15218f0}" Name="Trace_x0020_All_x0020_Employee_x" Description="" SourceID="{aa1cad41-64fe-40bb-a007-47703b3483eb}" StaticName="Trace_x0020_All_x0020_Employee_x" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Go over any changes with Staff for the week" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{40cff2d7-245e-4d14-b290-3ec640a17815}" Name="Go_x0020_over_x0020_any_x0020_ch" Description="" SourceID="{aa1cad41-64fe-40bb-a007-47703b3483eb}" StaticName="Go_x0020_over_x0020_any_x0020_ch" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Give Houseperson weekly project" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b5be641b-075a-4e4e-b970-9d139085edaf}" Name="Give_x0020_Houseperson_x0020_wee" Description="" SourceID="{aa1cad41-64fe-40bb-a007-47703b3483eb}" StaticName="Give_x0020_Houseperson_x0020_wee" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Total scores for housekeeping in room Program" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{449379d3-8709-475b-bfa9-9284461aabb6}" Name="Total_x0020_scores_x0020_for_x00" Description="" SourceID="{aa1cad41-64fe-40bb-a007-47703b3483eb}" StaticName="Total_x0020_scores_x0020_for_x00" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="GSS Meeting" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b190f883-0ba5-4221-a1be-e71d363542a2}" Name="GSS_x0020_Meeting" Description="" SourceID="{aa1cad41-64fe-40bb-a007-47703b3483eb}" StaticName="GSS_x0020_Meeting" ColName="bit7" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{09ef45ee-d2a0-45ad-b3f8-0ff18d0a7197}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{aa1cad41-64fe-40bb-a007-47703b3483eb}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([Schedule- Prepare and Post after GM approval]=TRUE,IF([GSS Meeting]=TRUE,IF([Total scores for housekeeping in room Program]=TRUE,IF([Give Houseperson weekly project]=TRUE,IF([Go over any changes with Staff for the week]=TRUE,IF([Trace All Employee reviews ensure timely completion]=TRUE,IF([Review Service Recovery Tracking]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{6e056679-a65a-4301-ba1b-985688afaf56}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{aa1cad41-64fe-40bb-a007-47703b3483eb}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([Schedule- Prepare and Post after GM approval]=TRUE,IF([GSS Meeting]=TRUE,IF([Total scores for housekeeping in room Program]=TRUE,IF([Give Houseperson weekly project]=TRUE,IF([Go over any changes with Staff for the week]=TRUE,IF([Trace All Employee reviews ensure timely completion]=TRUE,IF([Review Service Recovery Tracking]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{c669b3e6-9e02-427e-a0b6-f03d0ae99a5c}" Name="AssignedTo" SourceID="{aa1cad41-64fe-40bb-a007-47703b3483eb}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Exec Housekeeper Yearly Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Exec Housekeeper Yearly Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Exec Housekeeper Yearly Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Exec Housekeeper Yearly Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Exec Housekeeper Yearly Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{42548033-1344-44F5-B07C-46D44AADFBE2}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Exec Housekeeper Yearly Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Inspecting Cribs, Rollaway and Pullout sleepers" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{0e97cd59-8795-4810-b42c-10ca0975860f}" Name="Inspecting_x0020_Cribs_x002c__x0" Description="" SourceID="{8fc876e1-5d45-47da-9cf7-7b0a7494c381}" StaticName="Inspecting_x0020_Cribs_x002c__x0" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{3033e16b-3390-481f-b1d9-244623493301}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{8fc876e1-5d45-47da-9cf7-7b0a7494c381}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([Inspecting Cribs, Rollaway and Pullout sleepers]=TRUE,"YES","NO")</Formula>
+            </Field>
+            <Field ID="{8a0c8c52-16e5-4fea-831b-483ff40ca1ac}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{8fc876e1-5d45-47da-9cf7-7b0a7494c381}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE" Version="2">
+              <Formula>=IF([Inspecting Cribs, Rollaway and Pullout sleepers]=TRUE,"Completed","In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{f57a7745-0534-44ad-9e48-72b44673ddf3}" Name="AssignedTo" SourceID="{8fc876e1-5d45-47da-9cf7-7b0a7494c381}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Overnight Houseman Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Overnight Houseman Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Overnight Houseman Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Overnight Houseman Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Overnight Houseman Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{67785745-CCC4-47A3-BB4C-5DDE552138E2}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Overnight Houseman Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_K" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_G" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_T" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_S" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_C" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_L" />
+                <FieldRef Name="Laundry_x002d__x0020_Keep_x0020_" />
+                <FieldRef Name="Laundry_x002d__x0020_Wash_x002c_" />
+                <FieldRef Name="Laundry_x002d__x0020_Wash_x0020_" />
+                <FieldRef Name="Laundry_x002d__x0020_Clean_x0020" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl0" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Ch" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Va" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Em" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl1" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Va0" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Po" />
+                <FieldRef Name="Front_x0020_Entrances_x002d__x00" />
+                <FieldRef Name="The_x0020_Market_x002d__x0020_Em" />
+                <FieldRef Name="Sweep_x002c__x0020_mop_x0020_and" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x0" />
+                <FieldRef Name="Start" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x01" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x02" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x03" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x04" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x0" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x05" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x0020" />
+                <FieldRef Name="_x0020_Exercise_x0020_Room_x002d" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00200" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00201" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00202" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00203" />
+                <FieldRef Name="Exercise_x0020_Room_x0020__x002d" />
+                <FieldRef Name="OverallConfigValue1" />
+                <FieldRef Name="ChecklistStatus1" />
+                <FieldRef Name="AssignedTo" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Str" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Cle" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Wip" />
+                <FieldRef Name="Pool_x0020_Area_x002e__x0020_Emp" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Vac" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Res" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Emp" />
+                <FieldRef Name="Pool_x0020_Area_x0020__x002d__x0" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x002" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0020" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0021" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0022" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0023" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0024" />
+                <FieldRef Name="Elevators_x002d__x0020_Wipe_x002" />
+                <FieldRef Name="Elevators_x002e__x0020_Clean_x00" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x0020" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00200" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00201" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00202" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00203" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00204" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Broom" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Empty" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Vacuu" />
+                <FieldRef Name="Outdoor_x002d__x0020_Patro_x002e" />
+                <FieldRef Name="Outdoor_x0020__x002d__x0020_Swee" />
+                <FieldRef Name="Outdoor_x002d__x0020_Collect_x00" />
+                <FieldRef Name="Outdoor_x002d__x0020_Wipe_x0020_" />
+                <FieldRef Name="Outdoor_x002d__x0020_Sweep_x0020" />
+                <FieldRef Name="Outdoor_x002d__x0020_Check_x0020" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_0" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_1" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_2" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{14279EED-D653-49AC-BC11-BA9A56697BEA}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/Overnight Houseman Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_K" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_G" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_T" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_S" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_C" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_L" />
+                <FieldRef Name="Laundry_x002d__x0020_Keep_x0020_" />
+                <FieldRef Name="Laundry_x002d__x0020_Wash_x002c_" />
+                <FieldRef Name="Laundry_x002d__x0020_Wash_x0020_" />
+                <FieldRef Name="Laundry_x002d__x0020_Clean_x0020" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl0" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Ch" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Va" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Em" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl1" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Va0" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Po" />
+                <FieldRef Name="Front_x0020_Entrances_x002d__x00" />
+                <FieldRef Name="The_x0020_Market_x002d__x0020_Em" />
+                <FieldRef Name="Sweep_x002c__x0020_mop_x0020_and" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x0" />
+                <FieldRef Name="Start" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x01" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x02" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x03" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x04" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x0" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x05" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x0020" />
+                <FieldRef Name="_x0020_Exercise_x0020_Room_x002d" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00200" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00201" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00202" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00203" />
+                <FieldRef Name="Exercise_x0020_Room_x0020__x002d" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Str" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Cle" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Wip" />
+                <FieldRef Name="Pool_x0020_Area_x002e__x0020_Emp" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Vac" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Res" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Emp" />
+                <FieldRef Name="Pool_x0020_Area_x0020__x002d__x0" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x002" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0020" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0021" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0022" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0023" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0024" />
+                <FieldRef Name="Elevators_x002d__x0020_Wipe_x002" />
+                <FieldRef Name="Elevators_x002e__x0020_Clean_x00" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x0020" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00200" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00201" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00202" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00203" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00204" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Broom" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Empty" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Vacuu" />
+                <FieldRef Name="Outdoor_x002d__x0020_Patro_x002e" />
+                <FieldRef Name="Outdoor_x0020__x002d__x0020_Swee" />
+                <FieldRef Name="Outdoor_x002d__x0020_Collect_x00" />
+                <FieldRef Name="Outdoor_x002d__x0020_Wipe_x0020_" />
+                <FieldRef Name="Outdoor_x002d__x0020_Sweep_x0020" />
+                <FieldRef Name="Outdoor_x002d__x0020_Check_x0020" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_0" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_1" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_2" />
+                <FieldRef Name="Public_x0020_Bathrooms_x0020__x00" />
+                <FieldRef Name="Exercise_x0020_Room_x0020__x002d1" />
+                <FieldRef Name="OverallConfigValue2" />
+                <FieldRef Name="ChecklistStatus3" />
+                <FieldRef Name="OverallConfigValue3" />
+                <FieldRef Name="ChecklistStatus30" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="ChecklistStatus" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Get Started- Keep in close communication with the front desk through the entire shift" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{45ef4e8c-4b27-4919-a567-cf8dae0d2e15}" Name="Get_x0020_Started_x002d__x0020_K" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Get_x0020_Started_x002d__x0020_K" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get Started- Get a walkie-talkie from desk clerk test to make sure you can communicate" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4679cbf0-9e59-4f0b-833a-3ca00f97caaa}" Name="Get_x0020_Started_x002d__x0020_G" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Get_x0020_Started_x002d__x0020_G" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get Started- Talk to the desk on an hourly basis. Let the desk know if and when you are going outside" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{dd2c7382-7f01-474d-8ec6-a3343b8ac06d}" Name="Get_x0020_Started_x002d__x0020_T" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Get_x0020_Started_x002d__x0020_T" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get Started- Sign out House person keys with desk clerk as a witness" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4262d64c-a430-48c6-a6c6-8f9c5c37e589}" Name="Get_x0020_Started_x002d__x0020_S" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Get_x0020_Started_x002d__x0020_S" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get Started- Check the housekeeping box for any special assignments" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{7031ed40-2de3-4f2c-b5a4-17dd86d5fec5}" Name="Get_x0020_Started_x002d__x0020_C" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Get_x0020_Started_x002d__x0020_C" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get Started- Lock all exterior doors. Make sure that the pool is locked, if not write a maintenance slip" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1ba9bdf0-93f1-442f-be38-ce37fbcded8f}" Name="Get_x0020_Started_x002d__x0020_L" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Get_x0020_Started_x002d__x0020_L" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Laundry- Keep a supply of clean towels and linens available in the laundry room for the front desk" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b7e6d07a-c261-4234-b296-ba73e15d1ce9}" Name="Laundry_x002d__x0020_Keep_x0020_" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Laundry_x002d__x0020_Keep_x0020_" ColName="bit7" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Laundry- Wash, Dry and Fold any left over towels" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9c9d373b-7d7d-4a3f-8257-410c7111d7f0}" Name="Laundry_x002d__x0020_Wash_x002c_" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Laundry_x002d__x0020_Wash_x002c_" ColName="bit8" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Laundry- Wash and restock glasses on the 214, 361 and 41&quot; floor storage" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{3b0d1049-b0d7-4b40-8f1f-f603c2c8f164}" Name="Laundry_x002d__x0020_Wash_x0020_" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Laundry_x002d__x0020_Wash_x0020_" ColName="bit9" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Laundry- Clean out all dryer lint trap inside and outside" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1b18fd5c-cf94-4831-acbd-d6f534c626bc}" Name="Laundry_x002d__x0020_Clean_x0020" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Laundry_x002d__x0020_Clean_x0020" ColName="bit10" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Clean all glass windows and window sills" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{063055e6-48e4-4be0-8a88-dd3c64ed3f9b}" Name="Lobby_x0020_Area_x002d__x0020_Cl" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Lobby_x0020_Area_x002d__x0020_Cl" ColName="bit11" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Clean all glass doors at every hotel entrance" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{884bad0d-dd0c-47e0-8eeb-459fef450d13}" Name="Lobby_x0020_Area_x002d__x0020_Cl0" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Lobby_x0020_Area_x002d__x0020_Cl0" ColName="bit12" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Check the general conditions of the Lobbies, Aviation or Pre-Function, clean and pick up as necessary" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{478b8b8f-35d4-4a5e-960e-ddb595453c3f}" Name="Lobby_x0020_Area_x002d__x0020_Ch" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Lobby_x0020_Area_x002d__x0020_Ch" ColName="bit13" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Vacuum and lightly spray with air freshener the Lobbies, Aviation or Pre-Function" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9e6061b6-6f68-4d40-b08f-74988430a855}" Name="Lobby_x0020_Area_x002d__x0020_Va" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Lobby_x0020_Area_x002d__x0020_Va" ColName="bit14" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Empty trash cans and replace the liners, wipe down all pictures of the Lobbies" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ae579f12-e575-4763-8f22-274eb4e2988e}" Name="Lobby_x0020_Area_x002d__x0020_Em" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Lobby_x0020_Area_x002d__x0020_Em" ColName="bit15" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Clean all of the surfaces in the lobby. Wipe off all house phones" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{32db759f-5b9b-4e3d-84ed-b53ca8eca998}" Name="Lobby_x0020_Area_x002d__x0020_Cl1" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Lobby_x0020_Area_x002d__x0020_Cl1" ColName="bit16" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Vacuum Entrance and Courtyard Mats" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a6fae629-ff61-4f41-ba61-8fe66f782c99}" Name="Lobby_x0020_Area_x002d__x0020_Va0" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Lobby_x0020_Area_x002d__x0020_Va0" ColName="bit17" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Polish the luggage carts and brass thresholds" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a2fb4662-af2a-4912-ac2d-99410388bbe8}" Name="Lobby_x0020_Area_x002d__x0020_Po" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Lobby_x0020_Area_x002d__x0020_Po" ColName="bit18" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Front Entrances- Sweep sidewalk by the front entrance and pick up all of the cigarette butts" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{379c9e30-2f72-4f48-9d24-9639ec6fabb3}" Name="Front_x0020_Entrances_x002d__x00" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Front_x0020_Entrances_x002d__x00" ColName="bit19" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="The Market- Empty trash and replace liner." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{96ff567b-730c-4c9e-8aa8-77930eb54a98}" Name="The_x0020_Market_x002d__x0020_Em" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="The_x0020_Market_x002d__x0020_Em" ColName="bit20" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Sweep, mop and dry the lobby and hallway floors. (After 3am to avoid guest traffic) " Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f6c4a296-d2f1-45d6-996a-5201afe24cab}" Name="Sweep_x002c__x0020_mop_x0020_and" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Sweep_x002c__x0020_mop_x0020_and" ColName="bit21" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Clean the mirrors, sinks, and counter top. Make sure that there are no smudges" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{16c2db64-0bc1-4692-8f11-b37bdc6b9c69}" Name="Public_x0020_Bathrooms_x0020__x0" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Public_x0020_Bathrooms_x0020__x0" ColName="bit22" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Clean the toilets and urinal" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4635503b-1ed0-42f2-a172-6cfb6b217c73}" Name="Start" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Start" ColName="bit23" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Empty the trash and replace the liner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ae272c73-bf9d-4517-939a-2bfbb57e84e9}" Name="Public_x0020_Bathrooms_x0020__x01" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Public_x0020_Bathrooms_x0020__x01" ColName="bit25" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Restock the paper towels, toilet tissue, hand soap, and seat covers" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{6e50b102-f9b4-4015-b02d-88d7ba0b6362}" Name="Public_x0020_Bathrooms_x0020__x02" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Public_x0020_Bathrooms_x0020__x02" ColName="bit26" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Wipe chrome paper holder, trashcan and stall trashcans with Eco. Make sure that there are no streaks" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b1051eac-9db6-48f5-9926-d8403444a2ac}" Name="Public_x0020_Bathrooms_x0020__x03" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Public_x0020_Bathrooms_x0020__x03" ColName="bit27" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Clean doors and handles" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{3fe6c022-bf97-4251-9167-45757c2edda6}" Name="Public_x0020_Bathrooms_x0020__x04" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Public_x0020_Bathrooms_x0020__x04" ColName="bit28" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms- Remember to keep restocking and cleaning the conference center bathrooms if there is an event" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{c89f2de6-1a34-46cd-a09e-baf199100ddc}" Name="Public_x0020_Bathrooms_x002d__x0" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Public_x0020_Bathrooms_x002d__x0" ColName="bit29" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms - Sweep and mop and dry floors" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f70adaab-d1c0-4bdf-8bae-c7fa4ae2cff4}" Name="Public_x0020_Bathrooms_x0020__x05" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Public_x0020_Bathrooms_x0020__x05" ColName="bit30" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Dust and wipe down all equipment with sanitizer" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{8b266d8a-b444-47f0-b6da-1921d186e474}" Name="Exercise_x0020_Room_x002d__x0020" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Exercise_x0020_Room_x002d__x0020" ColName="bit31" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName=" Exercise Room- Clean the television and phone in the exercise room" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{183b8119-46ac-4568-9a1f-5ddd4cb5dee3}" Name="_x0020_Exercise_x0020_Room_x002d" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="_x0020_Exercise_x0020_Room_x002d" ColName="bit32" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Clean the windows, windows sills, door and mirror.   Make sure that there are no streaks." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b168c191-c6e5-4583-a177-5c6df2a935c6}" Name="Exercise_x0020_Room_x002d__x00200" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Exercise_x0020_Room_x002d__x00200" ColName="bit33" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Empty trash and replace liner." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{082157ef-167c-4abc-a619-12403a9419dc}" Name="Exercise_x0020_Room_x002d__x00201" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Exercise_x0020_Room_x002d__x00201" ColName="bit34" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Empty the hamper and take dirty towels to the laundry" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f9fcc8b5-61ef-4664-a35f-d0a1faf64421}" Name="Exercise_x0020_Room_x002d__x00202" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Exercise_x0020_Room_x002d__x00202" ColName="bit35" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Clean Water Dispenser, Refill cups and water when  necessary" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{2c52dc26-bec1-4b13-bc3b-e1108459f9a3}" Name="Exercise_x0020_Room_x002d__x00203" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Exercise_x0020_Room_x002d__x00203" ColName="bit36" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room - Make sure that the hand towels are folded and replenished" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{2f5ff061-a9fb-4a95-985c-ea94b461f386}" Name="Exercise_x0020_Room_x0020__x002d" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Exercise_x0020_Room_x0020__x002d" ColName="bit37" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{35902c04-4583-4e2a-a483-5f66c77b4e37}" Type="Calculated" ResultType="Text" Name="OverallConfigValue1" DisplayName="OverallConfigValue1" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="OverallConfigValue1" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Get Started- Keep in close communication with the front desk through the entire shift]=TRUE,IF([Exercise Room - Make sure that the hand towels are folded and replenished]=TRUE,IF([Exercise Room- Clean Water Dispenser, Refill cups and water when  necessary]=TRUE,IF([Exercise Room- Empty the hamper and take dirty towels to the laundry]=TRUE,IF([Exercise Room- Empty trash and replace liner.]=TRUE,IF([Exercise Room- Clean the windows, windows sills, door and mirror.   Make sure that there are no streaks.]=TRUE,IF([ Exercise Room- Clean the television and phone in the exercise room]=TRUE,IF([Exercise Room- Dust and wipe down all equipment with sanitizer]=TRUE,IF([Public Bathrooms - Sweep and mop and dry floors]=TRUE,IF([Public Bathrooms- Remember to keep restocking and cleaning the conference center bathrooms if there is an event]=TRUE,IF([Public Bathrooms - Clean doors and handles]=TRUE,IF([Public Bathrooms - Wipe chrome paper holder, trashcan and stall trashcans with Eco. Make sure that there are no streaks]=TRUE,IF([Public Bathrooms - Restock the paper towels, toilet tissue, hand soap, and seat covers]=TRUE,IF([Public Bathrooms - Empty the trash and replace the liner]=TRUE,IF([Public Bathrooms - Clean the toilets and urinal]=TRUE,IF(Start=TRUE,IF([Public Bathrooms - Clean the mirrors, sinks, and counter top. Make sure that there are no smudges]=TRUE,IF([Sweep, mop and dry the lobby and hallway floors. (After 3am to avoid guest traffic) ]=TRUE,IF([The Market- Empty trash and replace liner.]=TRUE,IF([Front Entrances- Sweep sidewalk by the front entrance and pick up all of the cigarette butts]=TRUE,IF([Lobby Area- Polish the luggage carts and brass thresholds]=TRUE,IF([Lobby Area- Vacuum Entrance and Courtyard Mats]=TRUE,IF([Lobby Area- Clean all of the surfaces in the lobby. Wipe off all house phones]=TRUE,IF([Lobby Area- Empty trash cans and replace the liners, wipe down all pictures of the Lobbies]=TRUE,IF([Lobby Area- Vacuum and lightly spray with air freshener the Lobbies, Aviation or Pre-Function]=TRUE,IF([Lobby Area- Check the general conditions of the Lobbies, Aviation or Pre-Function, clean and pick up as necessary]=TRUE,IF([Lobby Area- Clean all glass doors at every hotel entrance]=TRUE,IF([Lobby Area- Clean all glass windows and window sills]=TRUE,IF([Laundry- Clean out all dryer lint trap inside and outside]=TRUE,IF([Laundry- Wash and restock glasses on the 214, 361 and 41" floor storage]=TRUE,IF([Laundry- Wash, Dry and Fold any left over towels]=TRUE,IF([Laundry- Keep a supply of clean towels and linens available in the laundry room for the front desk]=TRUE,IF([Get Started- Lock all exterior doors. Make sure that the pool is locked, if not write a maintenance slip]=TRUE,IF([Get Started- Check the housekeeping box for any special assignments]=TRUE,IF([Get Started- Sign out House person keys with desk clerk as a witness]=TRUE,IF([Get Started- Talk to the desk on an hourly basis. Let the desk know if and when you are going outside]=TRUE,IF([Get Started- Get a walkie-talkie from desk clerk test to make sure you can communicate]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{c600e56d-0ab7-433b-8792-4cb47d363143}" Type="Calculated" ResultType="Text" Name="ChecklistStatus1" DisplayName="Checklist Status1" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="ChecklistStatus1" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Get Started- Keep in close communication with the front desk through the entire shift]=TRUE,IF([Exercise Room - Make sure that the hand towels are folded and replenished]=TRUE,IF([Exercise Room- Clean Water Dispenser, Refill cups and water when  necessary]=TRUE,IF([Exercise Room- Empty the hamper and take dirty towels to the laundry]=TRUE,IF([Exercise Room- Empty trash and replace liner.]=TRUE,IF([Exercise Room- Clean the windows, windows sills, door and mirror.   Make sure that there are no streaks.]=TRUE,IF([ Exercise Room- Clean the television and phone in the exercise room]=TRUE,IF([Exercise Room- Dust and wipe down all equipment with sanitizer]=TRUE,IF([Public Bathrooms - Sweep and mop and dry floors]=TRUE,IF([Public Bathrooms- Remember to keep restocking and cleaning the conference center bathrooms if there is an event]=TRUE,IF([Public Bathrooms - Clean doors and handles]=TRUE,IF([Public Bathrooms - Wipe chrome paper holder, trashcan and stall trashcans with Eco. Make sure that there are no streaks]=TRUE,IF([Public Bathrooms - Restock the paper towels, toilet tissue, hand soap, and seat covers]=TRUE,IF([Public Bathrooms - Empty the trash and replace the liner]=TRUE,IF([Public Bathrooms - Clean the toilets and urinal]=TRUE,IF(Start=TRUE,IF([Public Bathrooms - Clean the mirrors, sinks, and counter top. Make sure that there are no smudges]=TRUE,IF([Sweep, mop and dry the lobby and hallway floors. (After 3am to avoid guest traffic) ]=TRUE,IF([The Market- Empty trash and replace liner.]=TRUE,IF([Front Entrances- Sweep sidewalk by the front entrance and pick up all of the cigarette butts]=TRUE,IF([Lobby Area- Polish the luggage carts and brass thresholds]=TRUE,IF([Lobby Area- Vacuum Entrance and Courtyard Mats]=TRUE,IF([Lobby Area- Clean all of the surfaces in the lobby. Wipe off all house phones]=TRUE,IF([Lobby Area- Empty trash cans and replace the liners, wipe down all pictures of the Lobbies]=TRUE,IF([Lobby Area- Vacuum and lightly spray with air freshener the Lobbies, Aviation or Pre-Function]=TRUE,IF([Lobby Area- Check the general conditions of the Lobbies, Aviation or Pre-Function, clean and pick up as necessary]=TRUE,IF([Lobby Area- Clean all glass doors at every hotel entrance]=TRUE,IF([Lobby Area- Clean all glass windows and window sills]=TRUE,IF([Laundry- Clean out all dryer lint trap inside and outside]=TRUE,IF([Laundry- Wash and restock glasses on the 214, 361 and 41" floor storage]=TRUE,IF([Laundry- Wash, Dry and Fold any left over towels]=TRUE,IF([Laundry- Keep a supply of clean towels and linens available in the laundry room for the front desk]=TRUE,IF([Get Started- Lock all exterior doors. Make sure that the pool is locked, if not write a maintenance slip]=TRUE,IF([Get Started- Check the housekeeping box for any special assignments]=TRUE,IF([Get Started- Sign out House person keys with desk clerk as a witness]=TRUE,IF([Get Started- Talk to the desk on an hourly basis. Let the desk know if and when you are going outside]=TRUE,IF([Get Started- Get a walkie-talkie from desk clerk test to make sure you can communicate]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{79f77571-0882-40db-a648-5ee3840dcbea}" Name="AssignedTo" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+            <Field Type="Boolean" DisplayName="Pool Area- Straighten and wipe down pool furniture" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{99d77a62-9745-424f-ac5d-cebe577d2b4a}" Name="Pool_x0020_Area_x002d__x0020_Str" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Pool_x0020_Area_x002d__x0020_Str" ColName="bit39" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Clean all the windows and window sills" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{be285a2b-5ab8-419e-b6ba-a9140f4e2a7f}" Name="Pool_x0020_Area_x002d__x0020_Cle" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Pool_x0020_Area_x002d__x0020_Cle" ColName="bit40" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Wipe railings going into pool and spa with Eco Shine" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{57044df6-b079-42c5-b6c4-3c3141fef206}" Name="Pool_x0020_Area_x002d__x0020_Wip" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Pool_x0020_Area_x002d__x0020_Wip" ColName="bit41" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area. Empty all trashcans and replace liners" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{52c4869b-0e68-49fc-a1c4-8156e2041b4d}" Name="Pool_x0020_Area_x002e__x0020_Emp" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Pool_x0020_Area_x002e__x0020_Emp" ColName="bit42" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Vacuum and Straighten Side door mats" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ef3fa9af-5616-4cd5-b7e0-ac356e5a7221}" Name="Pool_x0020_Area_x002d__x0020_Vac" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Pool_x0020_Area_x002d__x0020_Vac" ColName="bit43" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Restock pool towels, until shelf is full" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{955470ad-69f0-4f18-a7cb-bb9d5cd8846d}" Name="Pool_x0020_Area_x002d__x0020_Res" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Pool_x0020_Area_x002d__x0020_Res" ColName="bit44" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Empty hamper and take dirty towels to laundry" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{fbdd3352-ae57-40cf-9e68-b6dde8119892}" Name="Pool_x0020_Area_x002d__x0020_Emp" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Pool_x0020_Area_x002d__x0020_Emp" ColName="bit45" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area - Sweep and mop the pool deck" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9a4ca860-e1db-49a5-97ec-1c0238f6ea2b}" Name="Pool_x0020_Area_x0020__x002d__x0" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Pool_x0020_Area_x0020__x002d__x0" ColName="bit46" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean windows and sills adjust curtain at the end of the halls neatly" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{b476dc6b-da19-4777-8617-70238d52e200}" Name="Floor_x0020_Hallways_x002d__x002" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Floor_x0020_Hallways_x002d__x002" ColName="bit47" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean House phones" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{2707e2ab-e826-4fe7-96a7-dec6c8311bf3}" Name="Floor_x0020_Hallways_x002d__x0020" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Floor_x0020_Hallways_x002d__x0020" ColName="bit48" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean inside and outside of all exit doors" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{029218b6-af41-45b7-b553-8b331a4c66ad}" Name="Floor_x0020_Hallways_x002d__x0021" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Floor_x0020_Hallways_x002d__x0021" ColName="bit49" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean all storage room doors on all floors" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{92878df2-7b72-4afe-b73e-6aa7e1f7a9cf}" Name="Floor_x0020_Hallways_x002d__x0022" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Floor_x0020_Hallways_x002d__x0022" ColName="bit50" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Empty trash and replace liner. Wipe of spills on trash cans on all floors" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1396a18c-7041-484e-946f-261c0a45e22f}" Name="Floor_x0020_Hallways_x002d__x0023" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Floor_x0020_Hallways_x002d__x0023" ColName="bit51" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean and Polish Ice machines on each floor " Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a583a7a8-1838-44c1-a579-f33fccd51672}" Name="Floor_x0020_Hallways_x002d__x0024" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Floor_x0020_Hallways_x002d__x0024" ColName="bit52" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Elevators- Wipe all stainless steel with Eco shine" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{93e82d92-061b-4fcb-9f73-65134fb2e1f9}" Name="Elevators_x002d__x0020_Wipe_x002" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Elevators_x002d__x0020_Wipe_x002" ColName="bit53" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Elevators. Clean threshold grooves and clean ceiling panels of any bugs or dust that collected" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ce576d96-e164-48bc-afcc-556827bf2ec7}" Name="Elevators_x002e__x0020_Clean_x00" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Elevators_x002e__x0020_Clean_x00" ColName="bit54" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Wipe down washers and dryers INSIDE and Out, dust shelves." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{cd6ecc9e-fcc9-4c70-984c-94f31ac616af}" Name="Guest_x0020_Laundry_x002d__x0020" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Guest_x0020_Laundry_x002d__x0020" ColName="bit55" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Clean lint traps in washer and dryer." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{aa30bc22-6e39-4c7b-a4ee-508a1070f482}" Name="Guest_x0020_Laundry_x002d__x00200" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Guest_x0020_Laundry_x002d__x00200" ColName="bit56" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Clean Picture with glass cleaner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{869ef3b9-78d3-46aa-9718-539c5ad7d0f0}" Name="Guest_x0020_Laundry_x002d__x00201" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Guest_x0020_Laundry_x002d__x00201" ColName="bit57" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Empty trash and replace liner." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{2b92837a-8623-481a-8bf8-c59231ee470e}" Name="Guest_x0020_Laundry_x002d__x00202" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Guest_x0020_Laundry_x002d__x00202" ColName="bit58" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Clean behind the washer and dryer" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{2999683e-fda0-4fb6-8c50-f98e5b80235d}" Name="Guest_x0020_Laundry_x002d__x00203" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Guest_x0020_Laundry_x002d__x00203" ColName="bit59" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Sweep and mop floor" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{d8fa38f4-d21a-44eb-b850-dd39a58d7766}" Name="Guest_x0020_Laundry_x002d__x00204" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Guest_x0020_Laundry_x002d__x00204" ColName="bit60" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Miscellaneous- Broom sweep stairwells Vacuum side entrances and side entrance mats " Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ed3569f7-9e17-4b91-99f9-8870869dfd87}" Name="Miscellaneous_x002d__x0020_Broom" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Miscellaneous_x002d__x0020_Broom" ColName="bit61" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Miscellaneous- Empty trash at Front Desk, back office and replace   liners" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{24eaf170-94e3-44c1-882b-74358e8e0d94}" Name="Miscellaneous_x002d__x0020_Empty" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Miscellaneous_x002d__x0020_Empty" ColName="bit62" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Miscellaneous- Vacuum Back Office" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{48670db6-450f-4ca3-a6b7-301dff389ece}" Name="Miscellaneous_x002d__x0020_Vacuu" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Miscellaneous_x002d__x0020_Vacuu" ColName="bit63" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Patro. the exterior of the properly at least three times" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1c683882-f0c1-46cd-adf8-d5785b6b6e08}" Name="Outdoor_x002d__x0020_Patro_x002e" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Outdoor_x002d__x0020_Patro_x002e" ColName="bit64" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor - Sweep sidewalks and pick up all cigarette butts" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{c2f3d43e-e793-482a-a3be-62142aa446ff}" Name="Outdoor_x0020__x002d__x0020_Swee" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Outdoor_x0020__x002d__x0020_Swee" ColName="bit65" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Collect and dispose of any trash" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{0f6f13af-6677-484f-8819-dd7ecf2e8e6c}" Name="Outdoor_x002d__x0020_Collect_x00" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Outdoor_x002d__x0020_Collect_x00" ColName="bit66" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Wipe off entrance trash cans. clean out ashtray and replace liner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{94ed9f5c-0c4e-4a92-ad2c-0ff5fe4a9053}" Name="Outdoor_x002d__x0020_Wipe_x0020_" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Outdoor_x002d__x0020_Wipe_x0020_" ColName="bit67" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Sweep patio and courtyard outside peel area" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{6f835c5d-7f51-466f-ab05-05bb01cb99b4}" Name="Outdoor_x002d__x0020_Sweep_x0020" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Outdoor_x002d__x0020_Sweep_x0020" ColName="bit68" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Check all exterior lights f there is one not working. fill out   a maintenance slip for the engineer rig department." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{89144ad7-9558-4303-bd01-b089634874d6}" Name="Outdoor_x002d__x0020_Check_x0020" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Outdoor_x002d__x0020_Check_x0020" ColName="bit69" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Finishing Up- Clean front entrance glass doors again and make sure entrance look and smell clean." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4fde0f4b-537b-47bb-b856-5d32f08a9e56}" Name="Finishing_x0020_Up_x002d__x0020_" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Finishing_x0020_Up_x002d__x0020_" ColName="bit70" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Finishing Up- Sign back in keys with desk and return radio" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1d6518ce-a91c-432e-89d8-08c479aef34c}" Name="Finishing_x0020_Up_x002d__x0020_0" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Finishing_x0020_Up_x002d__x0020_0" ColName="bit71" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Finishing Up- Please complete checklist Leave this checklist along   with any notes in Executive Housekeeper mailbox" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f57f7b78-e968-4df1-9759-1a8186631ce3}" Name="Finishing_x0020_Up_x002d__x0020_1" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Finishing_x0020_Up_x002d__x0020_1" ColName="bit72" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Finishing Up- Do not leave before scheduled shift ends" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ec981265-5a04-4dd2-84d9-e9c2c60517cf}" Name="Finishing_x0020_Up_x002d__x0020_2" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Finishing_x0020_Up_x002d__x0020_2" ColName="bit73" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Start" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{009be1e4-537c-4eb3-ab2d-91c1331af2f3}" Name="Public_x0020_Bathrooms_x0020__x00" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Public_x0020_Bathrooms_x0020__x00" ColName="bit24" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room - Vacuum Carpet and Spray with air fresh if there is no guest exercising. " Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{39e6482b-df8d-497d-b6b3-4dbc2ef621b0}" Name="Exercise_x0020_Room_x0020__x002d1" Description="" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="Exercise_x0020_Room_x0020__x002d1" ColName="bit74" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{7be8fdc4-1859-4310-b708-2ea92363b896}" Type="Calculated" ResultType="Text" Name="OverallConfigValue2" DisplayName="OverallConfigValue2" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="OverallConfigValue2" ColName="sql_variant3" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Exercise Room - Vacuum Carpet and Spray with air fresh if there is no guest exercising. ]=TRUE,IF([Guest Laundry- Clean Picture with glass cleaner]=TRUE,IF([Guest Laundry- Clean lint traps in washer and dryer.]=TRUE,IF([Guest Laundry- Wipe down washers and dryers INSIDE and Out, dust shelves.]=TRUE,IF([Elevators. Clean threshold grooves and clean ceiling panels of any bugs or dust that collected]=TRUE,IF([Elevators- Wipe all stainless steel with Eco shine]=TRUE,IF([Floor Hallways- Clean and Polish Ice machines on each floor ]=TRUE,IF([Floor Hallways- Empty trash and replace liner. Wipe of spills on trash cans on all floors]=TRUE,IF([Floor Hallways- Clean all storage room doors on all floors]=TRUE,IF([Floor Hallways- Clean inside and outside of all exit doors]=TRUE,IF([Floor Hallways- Clean House phones]=TRUE,IF([Floor Hallways- Clean windows and sills adjust curtain at the end of the halls neatly]=TRUE,IF([Pool Area - Sweep and mop the pool deck]=TRUE,IF([Pool Area- Empty hamper and take dirty towels to laundry]=TRUE,IF([Pool Area- Restock pool towels, until shelf is full]=TRUE,IF([Pool Area- Vacuum and Straighten Side door mats]=TRUE,IF([Pool Area. Empty all trashcans and replace liners]=TRUE,IF([Pool Area- Wipe railings going into pool and spa with Eco Shine]=TRUE,IF([Pool Area- Clean all the windows and window sills]=TRUE,IF([Pool Area- Straighten and wipe down pool furniture]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{7a0ad1c8-03d3-4ee1-9078-3af3082a2663}" Type="Calculated" ResultType="Text" Name="ChecklistStatus3" DisplayName="Checklist Status2" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="ChecklistStatus3" ColName="sql_variant6" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Guest Laundry- Empty trash and replace liner.]=TRUE,IF([Finishing Up- Do not leave before scheduled shift ends]=TRUE,IF([Finishing Up- Please complete checklist Leave this checklist along   with any notes in Executive Housekeeper mailbox]=TRUE,IF([Finishing Up- Sign back in keys with desk and return radio]=TRUE,IF([Finishing Up- Clean front entrance glass doors again and make sure entrance look and smell clean.]=TRUE,IF([Outdoor- Check all exterior lights f there is one not working. fill out   a maintenance slip for the engineer rig department.]=TRUE,IF([Outdoor- Sweep patio and courtyard outside peel area]=TRUE,IF([Outdoor- Wipe off entrance trash cans. clean out ashtray and replace liner]=TRUE,IF([Outdoor- Collect and dispose of any trash]=TRUE,IF([Outdoor - Sweep sidewalks and pick up all cigarette butts]=TRUE,IF([Outdoor- Patro. the exterior of the properly at least three times]=TRUE,IF([Miscellaneous- Vacuum Back Office]=TRUE,IF([Miscellaneous- Empty trash at Front Desk, back office and replace   liners]=TRUE,IF([Miscellaneous- Broom sweep stairwells Vacuum side entrances and side entrance mats ]=TRUE,IF([Guest Laundry- Sweep and mop floor]=TRUE,IF([Guest Laundry- Clean behind the washer and dryer]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field ID="{b78cb3f2-69d8-4911-8ccc-f5cb37a1c7d5}" Type="Calculated" ResultType="Text" Name="OverallConfigValue3" DisplayName="OverallConfigValue3" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="OverallConfigValue3" ColName="sql_variant4" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Guest Laundry- Empty trash and replace liner.]=TRUE,IF([Finishing Up- Do not leave before scheduled shift ends]=TRUE,IF([Finishing Up- Please complete checklist Leave this checklist along   with any notes in Executive Housekeeper mailbox]=TRUE,IF([Finishing Up- Sign back in keys with desk and return radio]=TRUE,IF([Finishing Up- Clean front entrance glass doors again and make sure entrance look and smell clean.]=TRUE,IF([Outdoor- Check all exterior lights f there is one not working. fill out   a maintenance slip for the engineer rig department.]=TRUE,IF([Outdoor- Sweep patio and courtyard outside peel area]=TRUE,IF([Outdoor- Wipe off entrance trash cans. clean out ashtray and replace liner]=TRUE,IF([Outdoor- Collect and dispose of any trash]=TRUE,IF([Outdoor - Sweep sidewalks and pick up all cigarette butts]=TRUE,IF([Outdoor- Patro. the exterior of the properly at least three times]=TRUE,IF([Miscellaneous- Vacuum Back Office]=TRUE,IF([Miscellaneous- Empty trash at Front Desk, back office and replace   liners]=TRUE,IF([Miscellaneous- Broom sweep stairwells Vacuum side entrances and side entrance mats ]=TRUE,IF([Guest Laundry- Sweep and mop floor]=TRUE,IF([Guest Laundry- Clean behind the washer and dryer]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{300681e3-f4df-41be-a56b-59c715abc5fc}" Type="Calculated" ResultType="Text" Name="ChecklistStatus30" DisplayName="Checklist Status3" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="ChecklistStatus30" ColName="sql_variant5" RowOrdinal="0" ReadOnly="TRUE" Version="1">
+              <Formula>=IF([Guest Laundry- Empty trash and replace liner.]=TRUE,IF([Finishing Up- Do not leave before scheduled shift ends]=TRUE,IF([Finishing Up- Please complete checklist Leave this checklist along   with any notes in Executive Housekeeper mailbox]=TRUE,IF([Finishing Up- Sign back in keys with desk and return radio]=TRUE,IF([Finishing Up- Clean front entrance glass doors again and make sure entrance look and smell clean.]=TRUE,IF([Outdoor- Check all exterior lights f there is one not working. fill out   a maintenance slip for the engineer rig department.]=TRUE,IF([Outdoor- Sweep patio and courtyard outside peel area]=TRUE,IF([Outdoor- Wipe off entrance trash cans. clean out ashtray and replace liner]=TRUE,IF([Outdoor- Collect and dispose of any trash]=TRUE,IF([Outdoor - Sweep sidewalks and pick up all cigarette butts]=TRUE,IF([Outdoor- Patro. the exterior of the properly at least three times]=TRUE,IF([Miscellaneous- Vacuum Back Office]=TRUE,IF([Miscellaneous- Empty trash at Front Desk, back office and replace   liners]=TRUE,IF([Miscellaneous- Broom sweep stairwells Vacuum side entrances and side entrance mats ]=TRUE,IF([Guest Laundry- Sweep and mop floor]=TRUE,IF([Guest Laundry- Clean behind the washer and dryer]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field ID="{8e0275ed-68f6-4ec3-8b58-a8a2bd481d1b}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="OverallConfigValue" ColName="sql_variant7" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF(OverallConfigValue1="YES",IF(OverallConfigValue2="YES",IF(OverallConfigValue3="YES","YES","NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{b1eed9e7-bbf6-4edb-ab50-ff418f0026b3}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{e0077d62-cd09-46d6-b460-276c2876b7fe}" StaticName="ChecklistStatus" ColName="sql_variant8" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF(OverallConfigValue1="Completed",IF(OverallConfigValue2="Completed",IF(OverallConfigValue3="Completed","Completed","In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="PM Houseman Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/PM Houseman Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/PM Houseman Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/PM Houseman Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/PM Houseman Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{15B95810-AB77-43D2-B613-B95827C1686C}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/PM Houseman Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_K" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_G" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_S" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_C" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x0" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x00" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x01" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x02" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x03" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x04" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x05" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x06" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl0" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Ch" />
+                <FieldRef Name="_x0020_Lobby_x0020_Area_x002d__x" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Em" />
+                <FieldRef Name="_x0020_Lobby_x0020_Area_x002d__x0" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl1" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Va" />
+                <FieldRef Name="The_x0020_Market_x002d__x0020_Em" />
+                <FieldRef Name="Sweep_x0020_the_x0020_lobby_x002" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x0020" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00200" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00201" />
+                <FieldRef Name="Exercise_x0020_Room_x0020__x002d" />
+                <FieldRef Name="Exercise_x0020_Room_x0020__x002d0" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Str" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Cle" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Wip" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Vac" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Res" />
+                <FieldRef Name="_x0020_Pool_x0020_Area_x002d__x0" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x002" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0020" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0021" />
+                <FieldRef Name="Elevators_x002d__x0020_Wipe_x002" />
+                <FieldRef Name="_x0020_Elevators_x002d__x0020_Cl" />
+                <FieldRef Name="Elevators_x002d__x0020_Clean_x00" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x0020" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00200" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00201" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00202" />
+                <FieldRef Name="_x0020_Guest_x0020_Laundry_x002d" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00203" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Broom" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Empty" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Vacuu" />
+                <FieldRef Name="Outdoor_x002d__x0020_Patrol_x002" />
+                <FieldRef Name="Outdoor_x002d__x0020_Sweep_x0020" />
+                <FieldRef Name="Outdoor_x002d__x0020_Collect_x00" />
+                <FieldRef Name="_x0020_Outdoor_x002d__x0020_Wipe" />
+                <FieldRef Name="Outdoor_x002d__x0020_Sweep_x00200" />
+                <FieldRef Name="Outdoor_x002d__x0020_Check_x0020" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_0" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_1" />
+                <FieldRef Name="Finishing_x0020_Up_x00e2__x20ac_" />
+                <FieldRef Name="OverallConfigValue1" />
+                <FieldRef Name="ChecklistStatus1" />
+                <FieldRef Name="AssignedTo" />
+                <FieldRef Name="OverallConfigValue2" />
+                <FieldRef Name="ChecklistStatus2" />
+                <FieldRef Name="OverAllConfigValue" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{A7096C8F-7429-415D-8388-627832CA9717}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/PM Houseman Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="ID" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_K" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_G" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_S" />
+                <FieldRef Name="Get_x0020_Started_x002d__x0020_C" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x0" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x00" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x01" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x02" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x03" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x04" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x05" />
+                <FieldRef Name="Public_x0020_Bathrooms_x002d__x06" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl0" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Ch" />
+                <FieldRef Name="_x0020_Lobby_x0020_Area_x002d__x" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Em" />
+                <FieldRef Name="_x0020_Lobby_x0020_Area_x002d__x0" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Cl1" />
+                <FieldRef Name="Lobby_x0020_Area_x002d__x0020_Va" />
+                <FieldRef Name="The_x0020_Market_x002d__x0020_Em" />
+                <FieldRef Name="Sweep_x0020_the_x0020_lobby_x002" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x0020" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00200" />
+                <FieldRef Name="Exercise_x0020_Room_x002d__x00201" />
+                <FieldRef Name="Exercise_x0020_Room_x0020__x002d" />
+                <FieldRef Name="Exercise_x0020_Room_x0020__x002d0" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Str" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Cle" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Wip" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Vac" />
+                <FieldRef Name="Pool_x0020_Area_x002d__x0020_Res" />
+                <FieldRef Name="_x0020_Pool_x0020_Area_x002d__x0" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x002" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0020" />
+                <FieldRef Name="Floor_x0020_Hallways_x002d__x0021" />
+                <FieldRef Name="Elevators_x002d__x0020_Wipe_x002" />
+                <FieldRef Name="_x0020_Elevators_x002d__x0020_Cl" />
+                <FieldRef Name="Elevators_x002d__x0020_Clean_x00" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x0020" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00200" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00201" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00202" />
+                <FieldRef Name="_x0020_Guest_x0020_Laundry_x002d" />
+                <FieldRef Name="Guest_x0020_Laundry_x002d__x00203" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Broom" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Empty" />
+                <FieldRef Name="Miscellaneous_x002d__x0020_Vacuu" />
+                <FieldRef Name="Outdoor_x002d__x0020_Patrol_x002" />
+                <FieldRef Name="Outdoor_x002d__x0020_Sweep_x0020" />
+                <FieldRef Name="Outdoor_x002d__x0020_Collect_x00" />
+                <FieldRef Name="_x0020_Outdoor_x002d__x0020_Wipe" />
+                <FieldRef Name="Outdoor_x002d__x0020_Sweep_x00200" />
+                <FieldRef Name="Outdoor_x002d__x0020_Check_x0020" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_0" />
+                <FieldRef Name="Finishing_x0020_Up_x002d__x0020_1" />
+                <FieldRef Name="Finishing_x0020_Up_x00e2__x20ac_" />
+                <FieldRef Name="ChecklistStatus" />
+                <FieldRef Name="ID" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Get Started- Keep in dose communication with the front desk through the entire shift" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{639defc9-b50b-446c-8e1c-bd6d2c82a24e}" Name="Get_x0020_Started_x002d__x0020_K" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Get_x0020_Started_x002d__x0020_K" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get Started- Get a walkie-talkie from desk clerk test to make sure you can communicate" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{0f1aed63-988a-4fab-939d-bb2db2311ccc}" Name="Get_x0020_Started_x002d__x0020_G" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Get_x0020_Started_x002d__x0020_G" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get Started- Sign out House person keys with desk agent as a witness" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f71cb316-8580-4e5d-8393-2b407cb55f05}" Name="Get_x0020_Started_x002d__x0020_S" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Get_x0020_Started_x002d__x0020_S" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get Started- Check with your manager for any meetings. functions Or special assignments" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{3a62acf8-3a4a-469f-8a6b-62fc7217dac8}" Name="Get_x0020_Started_x002d__x0020_C" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Get_x0020_Started_x002d__x0020_C" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms- Clean the mirrors. sinks. and counter top. Make sure that there are no smudges" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5170f45e-e81d-46a5-a8c8-56a8d76e7753}" Name="Public_x0020_Bathrooms_x002d__x0" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Public_x0020_Bathrooms_x002d__x0" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms- Clean the toilets and urinal" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{3a3ff38a-1e9c-4705-a818-553e63314825}" Name="Public_x0020_Bathrooms_x002d__x00" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Public_x0020_Bathrooms_x002d__x00" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms- Empty the trash and replace the liner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4c34d2f4-0227-48d3-b429-95d15eec4d8c}" Name="Public_x0020_Bathrooms_x002d__x01" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Public_x0020_Bathrooms_x002d__x01" ColName="bit7" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms- Restock the paper towels toilet tissue. hand soap, and seat covers" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{dad91c9a-e4cc-4ea5-8b3e-d2cd38f07e20}" Name="Public_x0020_Bathrooms_x002d__x02" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Public_x0020_Bathrooms_x002d__x02" ColName="bit8" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms- Wipe chrome paper holder trashcan and stall trashcans with Eco. Make sure that there are no streaks" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{6fe94e71-bb44-4937-83f3-121b4a6b9173}" Name="Public_x0020_Bathrooms_x002d__x03" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Public_x0020_Bathrooms_x002d__x03" ColName="bit9" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms- Clean doors and handles" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{00eb0346-6487-4eb5-8c54-b47fd1943e72}" Name="Public_x0020_Bathrooms_x002d__x04" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Public_x0020_Bathrooms_x002d__x04" ColName="bit10" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms- Remember to keep restocking and cleaning the conference center bathrooms if there is an event" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{314d130c-c692-4b24-acc4-390560346ced}" Name="Public_x0020_Bathrooms_x002d__x05" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Public_x0020_Bathrooms_x002d__x05" ColName="bit11" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Public Bathrooms- Sweep and mop and dry floors" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{95975692-7ba9-49ff-a263-053a8fc8c582}" Name="Public_x0020_Bathrooms_x002d__x06" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Public_x0020_Bathrooms_x002d__x06" ColName="bit12" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Clean all glass windows and window sills" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{0284c896-dadd-4833-9466-5d91445c1016}" Name="Lobby_x0020_Area_x002d__x0020_Cl" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Lobby_x0020_Area_x002d__x0020_Cl" ColName="bit13" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Clean all glass doors at every hotel entrance" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{2e3eb7d2-155a-4996-8698-d0527bd08570}" Name="Lobby_x0020_Area_x002d__x0020_Cl0" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Lobby_x0020_Area_x002d__x0020_Cl0" ColName="bit14" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Check the general conditions of the Lobbies, Aviation or Pre-Function, clean and pick up as necessary" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{d6d8617b-acac-4f11-a0ce-b5dea29a2f89}" Name="Lobby_x0020_Area_x002d__x0020_Ch" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Lobby_x0020_Area_x002d__x0020_Ch" ColName="bit15" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName=" Lobby Area- Vacuum and LIGHTLY spray with air freshener the Lobbies. Aviation or Pre-Function" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4499f088-938b-4622-b16a-bf653235f73d}" Name="_x0020_Lobby_x0020_Area_x002d__x" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="_x0020_Lobby_x0020_Area_x002d__x" ColName="bit16" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Empty trash cans and replace the liners wipe down ah pictures of the Lobbies. Aviation and Pre-Function" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ae9b96af-881b-4892-a4b8-3455b80d752a}" Name="Lobby_x0020_Area_x002d__x0020_Em" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Lobby_x0020_Area_x002d__x0020_Em" ColName="bit17" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName=" Lobby Area- Clean up and check the general condition the Courtyard area. Clean and pick up as necessary" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{012827ae-2b84-42e8-817a-5d132c2a9912}" Name="_x0020_Lobby_x0020_Area_x002d__x0" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="_x0020_Lobby_x0020_Area_x002d__x0" ColName="bit18" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Clean all of the surfaces in the lobby. Wipe off all house phones." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{088aca70-0813-415d-8948-e224f81e8a63}" Name="Lobby_x0020_Area_x002d__x0020_Cl1" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Lobby_x0020_Area_x002d__x0020_Cl1" ColName="bit19" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Lobby Area- Vacuum Entrance and Courtyard Mats" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{dc4641d1-16ad-4778-8ad0-9f833d79ebb5}" Name="Lobby_x0020_Area_x002d__x0020_Va" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Lobby_x0020_Area_x002d__x0020_Va" ColName="bit20" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="The Market- Empty trash and replace liner." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{42cda9d5-3b8b-4f72-bd72-6c1db7e52863}" Name="The_x0020_Market_x002d__x0020_Em" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="The_x0020_Market_x002d__x0020_Em" ColName="bit21" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Sweep the lobby and hallway floors" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{cebc56df-6fa4-4b5c-aa69-f0b4cec6ba68}" Name="Sweep_x0020_the_x0020_lobby_x002" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Sweep_x0020_the_x0020_lobby_x002" ColName="bit22" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Empty trash and replace liner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{0e9f1082-6146-4323-b40c-9914b01db49e}" Name="Exercise_x0020_Room_x002d__x0020" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Exercise_x0020_Room_x002d__x0020" ColName="bit23" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Empty the hamper and take dirty towels to the laundry." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ba66eefc-0356-4854-a42b-0ad6a1c895b2}" Name="Exercise_x0020_Room_x002d__x00200" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Exercise_x0020_Room_x002d__x00200" ColName="bit24" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room- Clean water dispenser. refill cups and water when necessary" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{bb254b5c-db14-46fd-8f43-e50aef34613c}" Name="Exercise_x0020_Room_x002d__x00201" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Exercise_x0020_Room_x002d__x00201" ColName="bit25" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room - Make sure that the hand towels are folded and replenished" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{da4be830-1622-43b9-9f05-e368ebdf9197}" Name="Exercise_x0020_Room_x0020__x002d" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Exercise_x0020_Room_x0020__x002d" ColName="bit26" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Exercise Room - Vacuum Carpet and Spray with air fresh, if there is not any guest exercising" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e5528560-899b-429b-9a8f-4b9e36f53876}" Name="Exercise_x0020_Room_x0020__x002d0" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Exercise_x0020_Room_x0020__x002d0" ColName="bit27" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Straighten and wipe down pool furniture" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e4282e24-5cd0-4075-bfba-475030b28a85}" Name="Pool_x0020_Area_x002d__x0020_Str" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Pool_x0020_Area_x002d__x0020_Str" ColName="bit28" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Clean all the windows and window sills" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e611a6ea-98f6-4ce1-bc61-3709f7cc5b9e}" Name="Pool_x0020_Area_x002d__x0020_Cle" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Pool_x0020_Area_x002d__x0020_Cle" ColName="bit29" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Wipe railings going into pool and spa with Eco Shine" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1e1f10a6-25ec-45d2-b72c-442109e3a8e6}" Name="Pool_x0020_Area_x002d__x0020_Wip" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Pool_x0020_Area_x002d__x0020_Wip" ColName="bit30" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Vacuum and Straighten Side door mats" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{29e8a3a7-dd16-4a05-93df-5922f62f338c}" Name="Pool_x0020_Area_x002d__x0020_Vac" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Pool_x0020_Area_x002d__x0020_Vac" ColName="bit31" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Pool Area- Restock pool towels. until shelf is full" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{bed95eaa-94dc-45f0-a023-f80f2b3d4d21}" Name="Pool_x0020_Area_x002d__x0020_Res" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Pool_x0020_Area_x002d__x0020_Res" ColName="bit32" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName=" Pool Area- Empty hamper and take dirty towels to laundry" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{88aefbd9-af8e-4b84-a29e-d63ece2e817f}" Name="_x0020_Pool_x0020_Area_x002d__x0" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="_x0020_Pool_x0020_Area_x002d__x0" ColName="bit33" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean windows and sills and close curtain at the end of the halls" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9f9e9860-43cb-455a-961d-a8d134cf3fa9}" Name="Floor_x0020_Hallways_x002d__x002" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Floor_x0020_Hallways_x002d__x002" ColName="bit34" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Empty trash and replace liner. Wipe of spills on trash cans on all floors" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a8a44ddb-e3fe-4ab7-bf79-0b3995277f78}" Name="Floor_x0020_Hallways_x002d__x0020" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Floor_x0020_Hallways_x002d__x0020" ColName="bit35" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Floor Hallways- Clean and Polish Ice machines on each floor." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{80a4fad4-3c6d-42f6-b210-23c23d456871}" Name="Floor_x0020_Hallways_x002d__x0021" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Floor_x0020_Hallways_x002d__x0021" ColName="bit36" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Elevators- Wipe all stainless steel with Eco shine" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{01673dd9-a19e-41a8-b309-7c3dd8d914f9}" Name="Elevators_x002d__x0020_Wipe_x002" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Elevators_x002d__x0020_Wipe_x002" ColName="bit37" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName=" Elevators- Clean threshold grooves and clean ceiling panels of any bugs or dust that is collected" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{abb7ab70-6b2e-4e81-a37e-cf870f07fb72}" Name="_x0020_Elevators_x002d__x0020_Cl" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="_x0020_Elevators_x002d__x0020_Cl" ColName="bit38" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Elevators- Clean floors with the mop in the AGM office" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f527005a-543b-46c4-af44-0584c28ad262}" Name="Elevators_x002d__x0020_Clean_x00" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Elevators_x002d__x0020_Clean_x00" ColName="bit39" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Wipe down washers and dryers INSIDE and Out. dust shelves" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{ae549663-3743-479a-bcdf-5024b16fb1b1}" Name="Guest_x0020_Laundry_x002d__x0020" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Guest_x0020_Laundry_x002d__x0020" ColName="bit40" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Clean lint traps in washer and dryer" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{217cfe21-c042-454a-98b7-843cb8f38ecb}" Name="Guest_x0020_Laundry_x002d__x00200" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Guest_x0020_Laundry_x002d__x00200" ColName="bit41" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Clean Picture with glass cleaner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{12edbe32-2140-4207-91cb-095bdd586f46}" Name="Guest_x0020_Laundry_x002d__x00201" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Guest_x0020_Laundry_x002d__x00201" ColName="bit42" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Empty trash and replace liner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{be2999d2-2134-463e-9de3-1f0b7ed10d6e}" Name="Guest_x0020_Laundry_x002d__x00202" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Guest_x0020_Laundry_x002d__x00202" ColName="bit43" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName=" Guest Laundry- Clean behind the washer and dryer" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f978cfb4-1151-46c3-9b9c-b057235157af}" Name="_x0020_Guest_x0020_Laundry_x002d" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="_x0020_Guest_x0020_Laundry_x002d" ColName="bit44" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Guest Laundry- Sweep and mop floor." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a264fe1b-6f50-4e6f-b559-c3d9652977c8}" Name="Guest_x0020_Laundry_x002d__x00203" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Guest_x0020_Laundry_x002d__x00203" ColName="bit45" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Miscellaneous- Broom sweep stairwells Vacuum side entrances and side entrance mats" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{92904bcc-059f-4c10-be46-c023356bbc90}" Name="Miscellaneous_x002d__x0020_Broom" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Miscellaneous_x002d__x0020_Broom" ColName="bit46" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Miscellaneous- Empty trash at Front Desk, Back Office, GM, AGM and Sales Offices and replace liners" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9e576ad0-8dba-47af-9105-8cb63596b184}" Name="Miscellaneous_x002d__x0020_Empty" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Miscellaneous_x002d__x0020_Empty" ColName="bit47" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Miscellaneous- Vacuum Back Office" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{08f762c1-534e-4bb3-a01b-a1134e18ed1f}" Name="Miscellaneous_x002d__x0020_Vacuu" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Miscellaneous_x002d__x0020_Vacuu" ColName="bit48" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Patrol the exterior of the property at least three times" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{97e5a3d5-3817-4b1c-b4cc-105da761cf8f}" Name="Outdoor_x002d__x0020_Patrol_x002" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Outdoor_x002d__x0020_Patrol_x002" ColName="bit49" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Sweep sidewalk up to front entrance and pick up all cigarette butts" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{7a2a3060-64b2-4d8a-8e4a-ff4f4e8fa112}" Name="Outdoor_x002d__x0020_Sweep_x0020" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Outdoor_x002d__x0020_Sweep_x0020" ColName="bit50" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Collect and dispose of any trash." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{fcdf8b5c-8c0f-4f8f-89f0-6221c278866c}" Name="Outdoor_x002d__x0020_Collect_x00" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Outdoor_x002d__x0020_Collect_x00" ColName="bit51" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName=" Outdoor- Wipe off entrance trash cans, clean out ashtray and replace liner." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e46d87a2-c281-4987-91ec-30efc2f6d236}" Name="_x0020_Outdoor_x002d__x0020_Wipe" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="_x0020_Outdoor_x002d__x0020_Wipe" ColName="bit52" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Sweep patio and sidewalk outside pool area." Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{554cd317-f313-4690-961a-48126ab6b072}" Name="Outdoor_x002d__x0020_Sweep_x00200" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Outdoor_x002d__x0020_Sweep_x00200" ColName="bit53" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Outdoor- Check all exterior lights. If there is one not working, fill out   a maintenance slip for the engineering department" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5454cd46-53e3-416a-8938-6881bef1f683}" Name="Outdoor_x002d__x0020_Check_x0020" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Outdoor_x002d__x0020_Check_x0020" ColName="bit54" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Finishing Up- Clean front entrance glass doors again and make sure entrance look and smell clean" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{c78b0304-59a1-4dd5-be03-87443e22379e}" Name="Finishing_x0020_Up_x002d__x0020_" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Finishing_x0020_Up_x002d__x0020_" ColName="bit55" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Finishing Up- Sign back in keys with desk 8 return radio" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a789369b-9dd6-4b96-83f6-ed40c8402bcf}" Name="Finishing_x0020_Up_x002d__x0020_0" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Finishing_x0020_Up_x002d__x0020_0" ColName="bit56" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Finishing Up- Please complete checklist. Leave this checklist along   with any notes in Executive Housekeeper mailbox " Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{29c4244c-9a70-441f-b590-748e7ea2284c}" Name="Finishing_x0020_Up_x002d__x0020_1" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Finishing_x0020_Up_x002d__x0020_1" ColName="bit57" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Finishing Upâ€” Do not leave before scheduled shift ends" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{732e89ed-d1a9-4b83-9a18-340d3cb81955}" Name="Finishing_x0020_Up_x00e2__x20ac_" Description="" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="Finishing_x0020_Up_x00e2__x20ac_" ColName="bit58" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{025f1dd1-0592-471d-9fd5-0703756796bf}" Type="Calculated" ResultType="Text" Name="OverallConfigValue1" DisplayName="OverallConfigValue1" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="OverallConfigValue1" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE" CustomFormatter="" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Version="1">
+              <Formula>=IF([Get Started- Keep in dose communication with the front desk through the entire shift]=TRUE,IF([Pool Area- Wipe railings going into pool and spa with Eco Shine]=TRUE,IF([Pool Area- Wipe railings going into pool and spa with Eco Shine]=TRUE,IF([Pool Area- Clean all the windows and window sills]=TRUE,IF([Pool Area- Straighten and wipe down pool furniture]=TRUE,IF([Exercise Room - Vacuum Carpet and Spray with air fresh, if there is not any guest exercising]=TRUE,IF([Exercise Room - Make sure that the hand towels are folded and replenished]=TRUE,IF([Exercise Room- Clean water dispenser. refill cups and water when necessary]=TRUE,IF([Exercise Room- Empty the hamper and take dirty towels to the laundry.]=TRUE,IF([Exercise Room- Empty trash and replace liner]=TRUE,IF([Sweep the lobby and hallway floors]=TRUE,IF([The Market- Empty trash and replace liner.]=TRUE,IF([Lobby Area- Vacuum Entrance and Courtyard Mats]=TRUE,IF([Lobby Area- Clean all of the surfaces in the lobby. Wipe off all house phones.]=TRUE,IF([ Lobby Area- Clean up and check the general condition the Courtyard area. Clean and pick up as necessary]=TRUE,IF([Lobby Area- Empty trash cans and replace the liners wipe down ah pictures of the Lobbies. Aviation and Pre-Function]=TRUE,IF([ Lobby Area- Vacuum and LIGHTLY spray with air freshener the Lobbies. Aviation or Pre-Function]=TRUE,IF([Lobby Area- Check the general conditions of the Lobbies, Aviation or Pre-Function, clean and pick up as necessary]=TRUE,IF([Lobby Area- Clean all glass doors at every hotel entrance]=TRUE,IF([Lobby Area- Clean all glass windows and window sills]=TRUE,IF([Public Bathrooms- Sweep and mop and dry floors]=TRUE,IF([Public Bathrooms- Remember to keep restocking and cleaning the conference center bathrooms if there is an event]=TRUE,IF([Public Bathrooms- Clean doors and handles]=TRUE,IF([Public Bathrooms- Wipe chrome paper holder trashcan and stall trashcans with Eco. Make sure that there are no streaks]=TRUE,IF([Public Bathrooms- Restock the paper towels toilet tissue. hand soap, and seat covers]=TRUE,IF([Public Bathrooms- Empty the trash and replace the liner]=TRUE,IF([Public Bathrooms- Clean the toilets and urinal]=TRUE,IF([Public Bathrooms- Clean the mirrors. sinks. and counter top. Make sure that there are no smudges]=TRUE,IF([Get Started- Check with your manager for any meetings. functions Or special assignments]=TRUE,IF([Get Started- Sign out House person keys with desk agent as a witness]=TRUE,IF([Get Started- Get a walkie-talkie from desk clerk test to make sure you can communicate]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{d0ca4903-4705-4ca7-94f9-88ec113d7045}" Type="Calculated" ResultType="Text" Name="ChecklistStatus1" DisplayName="Checklist Status1" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="ChecklistStatus1" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Get Started- Keep in dose communication with the front desk through the entire shift]=TRUE,IF([Pool Area- Wipe railings going into pool and spa with Eco Shine]=TRUE,IF([Pool Area- Wipe railings going into pool and spa with Eco Shine]=TRUE,IF([Pool Area- Clean all the windows and window sills]=TRUE,IF([Pool Area- Straighten and wipe down pool furniture]=TRUE,IF([Exercise Room - Vacuum Carpet and Spray with air fresh, if there is not any guest exercising]=TRUE,IF([Exercise Room - Make sure that the hand towels are folded and replenished]=TRUE,IF([Exercise Room- Clean water dispenser. refill cups and water when necessary]=TRUE,IF([Exercise Room- Empty the hamper and take dirty towels to the laundry.]=TRUE,IF([Exercise Room- Empty trash and replace liner]=TRUE,IF([Sweep the lobby and hallway floors]=TRUE,IF([The Market- Empty trash and replace liner.]=TRUE,IF([Lobby Area- Vacuum Entrance and Courtyard Mats]=TRUE,IF([Lobby Area- Clean all of the surfaces in the lobby. Wipe off all house phones.]=TRUE,IF([ Lobby Area- Clean up and check the general condition the Courtyard area. Clean and pick up as necessary]=TRUE,IF([Lobby Area- Empty trash cans and replace the liners wipe down ah pictures of the Lobbies. Aviation and Pre-Function]=TRUE,IF([ Lobby Area- Vacuum and LIGHTLY spray with air freshener the Lobbies. Aviation or Pre-Function]=TRUE,IF([Lobby Area- Check the general conditions of the Lobbies, Aviation or Pre-Function, clean and pick up as necessary]=TRUE,IF([Lobby Area- Clean all glass doors at every hotel entrance]=TRUE,IF([Lobby Area- Clean all glass windows and window sills]=TRUE,IF([Public Bathrooms- Sweep and mop and dry floors]=TRUE,IF([Public Bathrooms- Remember to keep restocking and cleaning the conference center bathrooms if there is an event]=TRUE,IF([Public Bathrooms- Clean doors and handles]=TRUE,IF([Public Bathrooms- Wipe chrome paper holder trashcan and stall trashcans with Eco. Make sure that there are no streaks]=TRUE,IF([Public Bathrooms- Restock the paper towels toilet tissue. hand soap, and seat covers]=TRUE,IF([Public Bathrooms- Empty the trash and replace the liner]=TRUE,IF([Public Bathrooms- Clean the toilets and urinal]=TRUE,IF([Public Bathrooms- Clean the mirrors. sinks. and counter top. Make sure that there are no smudges]=TRUE,IF([Get Started- Check with your manager for any meetings. functions Or special assignments]=TRUE,IF([Get Started- Sign out House person keys with desk agent as a witness]=TRUE,IF([Get Started- Get a walkie-talkie from desk clerk test to make sure you can communicate]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{017473bf-684e-4c6d-a277-977df1f4f181}" Name="AssignedTo" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+            <Field ID="{7218e34f-a1e2-41f3-83ce-f74f7a9205b0}" Type="Calculated" ResultType="Text" Name="OverallConfigValue2" DisplayName="OverallConfigValue2" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="OverallConfigValue2" ColName="sql_variant3" RowOrdinal="0" ReadOnly="TRUE" CustomFormatter="" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Version="1">
+              <Formula>=IF([Pool Area- Wipe railings going into pool and spa with Eco Shine]=TRUE,IF([Finishing Upâ€” Do not leave before scheduled shift ends]=TRUE,IF([Finishing Up- Please complete checklist. Leave this checklist along   with any notes in Executive Housekeeper mailbox ]=TRUE,IF([Finishing Up- Sign back in keys with desk 8 return radio]=TRUE,IF([Finishing Up- Clean front entrance glass doors again and make sure entrance look and smell clean]=TRUE,IF([Outdoor- Check all exterior lights. If there is one not working, fill out   a maintenance slip for the engineering department]=TRUE,IF([Outdoor- Sweep patio and sidewalk outside pool area.]=TRUE,IF([ Outdoor- Wipe off entrance trash cans, clean out ashtray and replace liner.]=TRUE,IF([Outdoor- Collect and dispose of any trash.]=TRUE,IF([Outdoor- Sweep sidewalk up to front entrance and pick up all cigarette butts]=TRUE,IF([Outdoor- Patrol the exterior of the property at least three times]=TRUE,IF([Miscellaneous- Vacuum Back Office]=TRUE,IF([Miscellaneous- Empty trash at Front Desk, Back Office, GM, AGM and Sales Offices and replace liners]=TRUE,IF([Miscellaneous- Broom sweep stairwells Vacuum side entrances and side entrance mats]=TRUE,IF([Guest Laundry- Sweep and mop floor.]=TRUE,IF([ Guest Laundry- Clean behind the washer and dryer]=TRUE,IF([Guest Laundry- Empty trash and replace liner]=TRUE,IF([Guest Laundry- Clean Picture with glass cleaner]=TRUE,IF([Guest Laundry- Clean lint traps in washer and dryer]=TRUE,IF([Guest Laundry- Wipe down washers and dryers INSIDE and Out. dust shelves]=TRUE,IF([Elevators- Clean floors with the mop in the AGM office]=TRUE,IF([ Elevators- Clean threshold grooves and clean ceiling panels of any bugs or dust that is collected]=TRUE,IF([Elevators- Wipe all stainless steel with Eco shine]=TRUE,IF([Floor Hallways- Clean and Polish Ice machines on each floor.]=TRUE,IF([Floor Hallways- Empty trash and replace liner. Wipe of spills on trash cans on all floors]=TRUE,IF([Floor Hallways- Clean windows and sills and close curtain at the end of the halls]=TRUE,IF([ Pool Area- Empty hamper and take dirty towels to laundry]=TRUE,IF([Pool Area- Restock pool towels. until shelf is full]=TRUE,IF([Pool Area- Vacuum and Straighten Side door mats]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{8ec527fa-16b6-4f55-8d93-83c64227eae7}" Type="Calculated" ResultType="Text" Name="ChecklistStatus2" DisplayName="Checklist Status2" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="ChecklistStatus2" ColName="sql_variant4" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Pool Area- Wipe railings going into pool and spa with Eco Shine]=TRUE,IF([Finishing Upâ€” Do not leave before scheduled shift ends]=TRUE,IF([Finishing Up- Please complete checklist. Leave this checklist along   with any notes in Executive Housekeeper mailbox ]=TRUE,IF([Finishing Up- Sign back in keys with desk 8 return radio]=TRUE,IF([Finishing Up- Clean front entrance glass doors again and make sure entrance look and smell clean]=TRUE,IF([Outdoor- Check all exterior lights. If there is one not working, fill out   a maintenance slip for the engineering department]=TRUE,IF([Outdoor- Sweep patio and sidewalk outside pool area.]=TRUE,IF([ Outdoor- Wipe off entrance trash cans, clean out ashtray and replace liner.]=TRUE,IF([Outdoor- Collect and dispose of any trash.]=TRUE,IF([Outdoor- Sweep sidewalk up to front entrance and pick up all cigarette butts]=TRUE,IF([Outdoor- Patrol the exterior of the property at least three times]=TRUE,IF([Miscellaneous- Vacuum Back Office]=TRUE,IF([Miscellaneous- Empty trash at Front Desk, Back Office, GM, AGM and Sales Offices and replace liners]=TRUE,IF([Miscellaneous- Broom sweep stairwells Vacuum side entrances and side entrance mats]=TRUE,IF([Guest Laundry- Sweep and mop floor.]=TRUE,IF([ Guest Laundry- Clean behind the washer and dryer]=TRUE,IF([Guest Laundry- Empty trash and replace liner]=TRUE,IF([Guest Laundry- Clean Picture with glass cleaner]=TRUE,IF([Guest Laundry- Clean lint traps in washer and dryer]=TRUE,IF([Guest Laundry- Wipe down washers and dryers INSIDE and Out. dust shelves]=TRUE,IF([Elevators- Clean floors with the mop in the AGM office]=TRUE,IF([ Elevators- Clean threshold grooves and clean ceiling panels of any bugs or dust that is collected]=TRUE,IF([Elevators- Wipe all stainless steel with Eco shine]=TRUE,IF([Floor Hallways- Clean and Polish Ice machines on each floor.]=TRUE,IF([Floor Hallways- Empty trash and replace liner. Wipe of spills on trash cans on all floors]=TRUE,IF([Floor Hallways- Clean windows and sills and close curtain at the end of the halls]=TRUE,IF([ Pool Area- Empty hamper and take dirty towels to laundry]=TRUE,IF([Pool Area- Restock pool towels. until shelf is full]=TRUE,IF([Pool Area- Vacuum and Straighten Side door mats]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="Calculated" DisplayName="OverAllConfigValue" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{014deea0-dc9a-4acf-b3e1-14482f10ac7e}" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="OverAllConfigValue" Name="OverAllConfigValue" ColName="sql_variant6" RowOrdinal="0">
+              <Formula>=IF(OverallConfigValue1="YES",IF(OverallConfigValue2="YES","YES","NO"),"NO")</Formula>
+            </Field>
+            <Field Type="Calculated" DisplayName="Checklist Status" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{2f2bdd41-fc34-48c9-a11a-1fa3e7ceb630}" SourceID="{00a76da4-7c0b-4fa7-9415-53e48fa9b6af}" StaticName="ChecklistStatus" Name="ChecklistStatus" ColName="sql_variant5" RowOrdinal="0" CustomFormatter="" Required="FALSE" Version="1">
+              <Formula>=IF(OverallConfigValue1="Completed",IF(OverallConfigValue2="Completed","Completed","In Progress"),"In Progress")</Formula>
+            </Field>
+          </pnp:Fields>
+        </pnp:ListInstance>
+        </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

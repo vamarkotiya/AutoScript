@@ -1,0 +1,400 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.14.1910.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-4D380CEC0A7D433A980A9C42DBEE9967">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-4D380CEC0A7D433A980A9C42DBEE9967" Version="1" BaseSiteTemplate="STS#3" Scope="Web">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Chief Engineer As Needed Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Chief Engineer As Needed Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Chief Engineer As Needed Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Chief Engineer As Needed Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Chief Engineer As Needed Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{9664021E-B0B6-4028-803B-06C94CB0A8A7}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Chief Engineer As Needed Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="New_x0020_Hire_x0020_Paper_x0020" />
+                <FieldRef Name="Ongoing_x0020_Training" />
+                <FieldRef Name="New_x0020_Associate_x0020_Orient" />
+                <FieldRef Name="MOD_x0020_Shifts" />
+                <FieldRef Name="Uniform_x0020_or_x0020_Nametag_x" />
+                <FieldRef Name="Distribute_x0020_Time_x0020_Card" />
+                <FieldRef Name="Hiring_x0020_and_x0020_Training" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="ChecklistStatus" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{005FB8B9-758F-4168-BAA2-5E2736933C1E}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/Chief Engineer As Needed Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="New_x0020_Hire_x0020_Paper_x0020" />
+                <FieldRef Name="Ongoing_x0020_Training" />
+                <FieldRef Name="New_x0020_Associate_x0020_Orient" />
+                <FieldRef Name="MOD_x0020_Shifts" />
+                <FieldRef Name="Uniform_x0020_or_x0020_Nametag_x" />
+                <FieldRef Name="Distribute_x0020_Time_x0020_Card" />
+                <FieldRef Name="Hiring_x0020_and_x0020_Training" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="New Hire Paper Work to GM" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{d9ef3331-e171-4614-80a5-a05ff4b4066e}" Name="New_x0020_Hire_x0020_Paper_x0020" Description="" SourceID="{55b73f91-af3e-4456-9061-3e39594a8f25}" StaticName="New_x0020_Hire_x0020_Paper_x0020" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Ongoing Training" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{2be1ba54-ed57-4622-a69c-89d33d0cef3b}" Name="Ongoing_x0020_Training" Description="" SourceID="{55b73f91-af3e-4456-9061-3e39594a8f25}" StaticName="Ongoing_x0020_Training" ColName="bit2" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="New Associate Orientation" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{39638298-87c4-42f1-860c-b58fded816dd}" Name="New_x0020_Associate_x0020_Orient" Description="" SourceID="{55b73f91-af3e-4456-9061-3e39594a8f25}" StaticName="New_x0020_Associate_x0020_Orient" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="MOD Shifts" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{64ede237-ce03-427e-88c0-1ab98cdf2035}" Name="MOD_x0020_Shifts" Description="" SourceID="{55b73f91-af3e-4456-9061-3e39594a8f25}" StaticName="MOD_x0020_Shifts" ColName="bit4" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Uniform or Nametag Order" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{d3a9c912-466e-485c-ae96-386cd40dcae6}" Name="Uniform_x0020_or_x0020_Nametag_x" Description="" SourceID="{55b73f91-af3e-4456-9061-3e39594a8f25}" StaticName="Uniform_x0020_or_x0020_Nametag_x" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Distribute Time Cards" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{6f399ae8-974d-4232-9f8b-d7c4f67641b3}" Name="Distribute_x0020_Time_x0020_Card" Description="" SourceID="{55b73f91-af3e-4456-9061-3e39594a8f25}" StaticName="Distribute_x0020_Time_x0020_Card" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Hiring and Training" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{f7202f8d-9a77-4b83-b1b1-aaac1b8fc0bd}" Name="Hiring_x0020_and_x0020_Training" Description="" SourceID="{55b73f91-af3e-4456-9061-3e39594a8f25}" StaticName="Hiring_x0020_and_x0020_Training" ColName="bit7" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{5651a97b-34bb-4330-9882-de6753a016fb}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{55b73f91-af3e-4456-9061-3e39594a8f25}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([New Hire Paper Work to GM]=TRUE,IF([Hiring and Training]=TRUE,IF([Distribute Time Cards]=TRUE,IF([Uniform or Nametag Order]=TRUE,IF([MOD Shifts]=TRUE,IF([New Associate Orientation]=TRUE,IF([Ongoing Training]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{5bd7b881-4396-42c1-b43a-912c7a9619ca}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{55b73f91-af3e-4456-9061-3e39594a8f25}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([New Hire Paper Work to GM]=TRUE,IF([Hiring and Training]=TRUE,IF([Distribute Time Cards]=TRUE,IF([Uniform or Nametag Order]=TRUE,IF([MOD Shifts]=TRUE,IF([New Associate Orientation]=TRUE,IF([Ongoing Training]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{a497c622-10ec-4994-a9d5-4a2fb81b3d8a}" Name="AssignedTo" SourceID="{55b73f91-af3e-4456-9061-3e39594a8f25}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Chief Engineer Daily Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Chief Engineer Daily Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Chief Engineer Daily Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Chief Engineer Daily Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Chief Engineer Daily Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{73684637-F257-4CDD-93D7-5F287035A147}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Chief Engineer Daily Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="_x0022_MBWA_x0022__x0020_Manage_" />
+                <FieldRef Name="Check_x0020_the_x0020_pool_x0020" />
+                <FieldRef Name="Talk_x0020_to_x0020_Front_x0020_" />
+                <FieldRef Name="Check_x0020_out_x0020_of_x0020_o" />
+                <FieldRef Name="Work_x0020_on_x0020_PM_x0020_lis" />
+                <FieldRef Name="Check_x0020_all_x0020_public_x00" />
+                <FieldRef Name="Check_x0020_with_x0020_Banquet_x" />
+                <FieldRef Name="Check_x0020_all_x0020_public_x000" />
+                <FieldRef Name="Check_x0020_out_x0020_side_x0020" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="ChecklistStatus" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{FD6D6A18-1CB0-4B0F-B35A-1169923CA940}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/Chief Engineer Daily Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="_x0022_MBWA_x0022__x0020_Manage_" />
+                <FieldRef Name="Check_x0020_the_x0020_pool_x0020" />
+                <FieldRef Name="Talk_x0020_to_x0020_Front_x0020_" />
+                <FieldRef Name="Check_x0020_out_x0020_of_x0020_o" />
+                <FieldRef Name="Work_x0020_on_x0020_PM_x0020_lis" />
+                <FieldRef Name="Check_x0020_all_x0020_public_x00" />
+                <FieldRef Name="Check_x0020_with_x0020_Banquet_x" />
+                <FieldRef Name="Check_x0020_all_x0020_public_x000" />
+                <FieldRef Name="Check_x0020_out_x0020_side_x0020" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="&quot;MBWA&quot; Manage by Walking Around" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{cdf20c6f-d6e3-4765-9c16-8dbba65ec0b1}" Name="_x0022_MBWA_x0022__x0020_Manage_" Description="" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="_x0022_MBWA_x0022__x0020_Manage_" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check the pool chemicals and balance 2 time a day AM and PM" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{44c7af93-8cc8-44c7-90d2-45ecf6713da4}" Name="Check_x0020_the_x0020_pool_x0020" Description="" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="Check_x0020_the_x0020_pool_x0020" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Talk to Front Desk to see if there were and Maintains problems in rooms" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{bc492e82-49f1-4177-95b7-3ca1f5fd7a62}" Name="Talk_x0020_to_x0020_Front_x0020_" Description="" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="Talk_x0020_to_x0020_Front_x0020_" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check out of order rooms" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{48b90cc4-29e9-4e10-b4f2-b15a675e2aea}" Name="Check_x0020_out_x0020_of_x0020_o" Description="" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="Check_x0020_out_x0020_of_x0020_o" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Work on PM list 3 rooms a day detailed" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{c0a8402b-dd82-499c-a413-f3bd50c02943}" Name="Work_x0020_on_x0020_PM_x0020_lis" Description="" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="Work_x0020_on_x0020_PM_x0020_lis" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check all public space inside and outside or Walking parking lot and the Hotel before you leave" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{be98dd3f-fd27-472b-a8fa-ca9e9456de28}" Name="Check_x0020_all_x0020_public_x00" Description="" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="Check_x0020_all_x0020_public_x00" ColName="bit6" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check with Banquet Manager making sure there are no Maintains needs" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{3487601a-fd25-4fdc-8fdd-9a68de13be12}" Name="Check_x0020_with_x0020_Banquet_x" Description="" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="Check_x0020_with_x0020_Banquet_x" ColName="bit7" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check all public Areas, halls and stairwells" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{3fc205bc-8622-4ab0-9e94-88b92e2e0265}" Name="Check_x0020_all_x0020_public_x000" Description="" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="Check_x0020_all_x0020_public_x000" ColName="bit8" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check out side pond and courtyard fountains" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e15b2046-21bb-404c-bfd1-0233c48ea0df}" Name="Check_x0020_out_x0020_side_x0020" Description="" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="Check_x0020_out_x0020_side_x0020" ColName="bit9" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{54fa2dea-ca51-45cf-a3cb-fdfdcb786e5d}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF(["MBWA" Manage by Walking Around]=TRUE,IF([Check out side pond and courtyard fountains]=TRUE,IF([Check all public Areas, halls and stairwells]=TRUE,IF([Check with Banquet Manager making sure there are no Maintains needs]=TRUE,IF([Check all public space inside and outside or Walking parking lot and the Hotel before you leave]=TRUE,IF([Work on PM list 3 rooms a day detailed]=TRUE,IF([Check out of order rooms]=TRUE,IF([Talk to Front Desk to see if there were and Maintains problems in rooms]=TRUE,IF([Check the pool chemicals and balance 2 time a day AM and PM]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{11e0798c-7cc1-4d7d-97a6-fdb7da762c40}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF(["MBWA" Manage by Walking Around]=TRUE,IF([Check out side pond and courtyard fountains]=TRUE,IF([Check all public Areas, halls and stairwells]=TRUE,IF([Check with Banquet Manager making sure there are no Maintains needs]=TRUE,IF([Check all public space inside and outside or Walking parking lot and the Hotel before you leave]=TRUE,IF([Work on PM list 3 rooms a day detailed]=TRUE,IF([Check out of order rooms]=TRUE,IF([Talk to Front Desk to see if there were and Maintains problems in rooms]=TRUE,IF([Check the pool chemicals and balance 2 time a day AM and PM]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{34ae2fba-a189-4397-80a4-c561c996bd30}" Name="AssignedTo" SourceID="{751af573-b3a3-4d30-807a-384a78637689}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Chief Engineer Monthly Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Chief Engineer Monthly Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Chief Engineer Monthly Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Chief Engineer Monthly Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Chief Engineer Monthly Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{507E0C24-F20E-4EAF-82DE-0C4CFA58B931}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Chief Engineer Monthly Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Change_x0020_hotel_x0020_filters" />
+                <FieldRef Name="Associate_x0020_Celebrations_x00" />
+                <FieldRef Name="Inspect_x0020_back_x0020_flow_x0" />
+                <FieldRef Name="Get_x0020_with_x0020_Housekeepin" />
+                <FieldRef Name="Carpet_x0020_cleaning_x0020_on_x" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="ChecklistStatus" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{921AEE5D-11F2-4D72-85CA-A889B85785EF}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/Chief Engineer Monthly Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Change_x0020_hotel_x0020_filters" />
+                <FieldRef Name="Associate_x0020_Celebrations_x00" />
+                <FieldRef Name="Inspect_x0020_back_x0020_flow_x0" />
+                <FieldRef Name="Get_x0020_with_x0020_Housekeepin" />
+                <FieldRef Name="Carpet_x0020_cleaning_x0020_on_x" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Change hotel filters or Ptac Filters" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{56d4dd5b-cacb-454e-bd2f-0a6349ff36f4}" Name="Change_x0020_hotel_x0020_filters" Description="" SourceID="{2bb94787-2f0e-4ff9-9e45-cea78838449d}" StaticName="Change_x0020_hotel_x0020_filters" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Associate Celebrations or every 3 month help plan" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e19da062-4e8d-4e04-9a1d-f838a12c847f}" Name="Associate_x0020_Celebrations_x00" Description="" SourceID="{2bb94787-2f0e-4ff9-9e45-cea78838449d}" StaticName="Associate_x0020_Celebrations_x00" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Inspect back flow and report and file for QA" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{fd8c3e1a-a174-446e-9e73-8a333ab811b4}" Name="Inspect_x0020_back_x0020_flow_x0" Description="" SourceID="{2bb94787-2f0e-4ff9-9e45-cea78838449d}" StaticName="Inspect_x0020_back_x0020_flow_x0" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Get with Housekeeping so you can be part of  department meetings" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{c01ac12a-cc46-4596-8d98-1e544944314a}" Name="Get_x0020_with_x0020_Housekeepin" Description="" SourceID="{2bb94787-2f0e-4ff9-9e45-cea78838449d}" StaticName="Get_x0020_with_x0020_Housekeepin" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Carpet cleaning on room that are looking bad" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1587df6a-e067-4b88-b1be-e5b38c64627e}" Name="Carpet_x0020_cleaning_x0020_on_x" Description="" SourceID="{2bb94787-2f0e-4ff9-9e45-cea78838449d}" StaticName="Carpet_x0020_cleaning_x0020_on_x" ColName="bit5" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{d5bd09c8-3080-46f5-9284-8984df20716b}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{2bb94787-2f0e-4ff9-9e45-cea78838449d}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Change hotel filters or Ptac Filters]=TRUE,IF([Carpet cleaning on room that are looking bad]=TRUE,IF([Get with Housekeeping so you can be part of  department meetings]=TRUE,IF([Inspect back flow and report and file for QA]=TRUE,IF([Associate Celebrations or every 3 month help plan]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{3257fcb3-6acb-4379-893e-86f040e0ab0f}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{2bb94787-2f0e-4ff9-9e45-cea78838449d}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Change hotel filters or Ptac Filters]=TRUE,IF([Carpet cleaning on room that are looking bad]=TRUE,IF([Get with Housekeeping so you can be part of  department meetings]=TRUE,IF([Inspect back flow and report and file for QA]=TRUE,IF([Associate Celebrations or every 3 month help plan]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{387aec6a-74db-4eb5-bd9c-49fbd9b39a39}" Name="AssignedTo" SourceID="{2bb94787-2f0e-4ff9-9e45-cea78838449d}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Chief Engineer Weekly Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Chief Engineer Weekly Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Chief Engineer Weekly Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Chief Engineer Weekly Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Chief Engineer Weekly Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{F40F7535-1DC5-49FB-BE13-20BE06F71A69}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Chief Engineer Weekly Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Work_x0020_on_x0020_PM_x0020_wor" />
+                <FieldRef Name="Review_x0020_Service_x0020_Recov" />
+                <FieldRef Name="Check_x0020_all_x0020_Parking_x0" />
+                <FieldRef Name="Go_x0020_over_x0020_any_x0020_ch" />
+                <FieldRef Name="GSS_x0020_Meeting" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="ChecklistStatus" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{9644CE71-E56F-4205-A38A-351498169BAB}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/Chief Engineer Weekly Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Work_x0020_on_x0020_PM_x0020_wor" />
+                <FieldRef Name="Review_x0020_Service_x0020_Recov" />
+                <FieldRef Name="Check_x0020_all_x0020_Parking_x0" />
+                <FieldRef Name="Go_x0020_over_x0020_any_x0020_ch" />
+                <FieldRef Name="GSS_x0020_Meeting" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Work on PM works packet" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{d9346141-0159-4015-b9bf-c5eb6b2eb592}" Name="Work_x0020_on_x0020_PM_x0020_wor" Description="" SourceID="{9f0c5e89-3628-4b3c-b883-956b972a330d}" StaticName="Work_x0020_on_x0020_PM_x0020_wor" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Review Service Recovery Tracking" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{70a732be-6d9a-4d58-8a79-a56167ea76c9}" Name="Review_x0020_Service_x0020_Recov" Description="" SourceID="{9f0c5e89-3628-4b3c-b883-956b972a330d}" StaticName="Review_x0020_Service_x0020_Recov" ColName="bit2" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Check all Parking lot lights making sure all are working" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a98b12d4-8593-40fd-8437-780565562b71}" Name="Check_x0020_all_x0020_Parking_x0" Description="" SourceID="{9f0c5e89-3628-4b3c-b883-956b972a330d}" StaticName="Check_x0020_all_x0020_Parking_x0" ColName="bit3" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="Go over any changes with Staff for the week" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{4d011943-70f0-4a59-a24f-3e4f8c0271fe}" Name="Go_x0020_over_x0020_any_x0020_ch" Description="" SourceID="{9f0c5e89-3628-4b3c-b883-956b972a330d}" StaticName="Go_x0020_over_x0020_any_x0020_ch" ColName="bit4" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field Type="Boolean" DisplayName="GSS Meeting" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5c78d1a0-5f4b-4e3a-8c81-43f0465bb981}" Name="GSS_x0020_Meeting" Description="" SourceID="{9f0c5e89-3628-4b3c-b883-956b972a330d}" StaticName="GSS_x0020_Meeting" ColName="bit5" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{19177da5-a5a3-4f3b-9319-7abee24b2419}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{9f0c5e89-3628-4b3c-b883-956b972a330d}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Work on PM works packet]=TRUE,IF([GSS Meeting]=TRUE,IF([Go over any changes with Staff for the week]=TRUE,IF([Check all Parking lot lights making sure all are working]=TRUE,IF([Review Service Recovery Tracking]=TRUE,"YES","NO"),"NO"),"NO"),"NO"),"NO")</Formula>
+            </Field>
+            <Field ID="{2fc1c4fc-b35d-4f02-80e6-e306bfc30c7d}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{9f0c5e89-3628-4b3c-b883-956b972a330d}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Work on PM works packet]=TRUE,IF([GSS Meeting]=TRUE,IF([Go over any changes with Staff for the week]=TRUE,IF([Check all Parking lot lights making sure all are working]=TRUE,IF([Review Service Recovery Tracking]=TRUE,"Completed","In Progress"),"In Progress"),"In Progress"),"In Progress"),"In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{a7d6e11c-d90d-4a45-bb72-9c6044f4a6d2}" Name="AssignedTo" SourceID="{9f0c5e89-3628-4b3c-b883-956b972a330d}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Chief Engineer Yearly Checklist" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Chief Engineer Yearly Checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Chief Engineer Yearly Checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Chief Engineer Yearly Checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Chief Engineer Yearly Checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{308468F7-154E-465D-A156-047A6E511D5C}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Chief Engineer Yearly Checklist/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Inspecting_x0020_Cribs_x002c__x0" />
+                <FieldRef Name="OverallConfigValue" />
+                <FieldRef Name="ChecklistStatus" />
+                <FieldRef Name="AssignedTo" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{416802BD-156E-476D-8684-87A6EEF72855}" DefaultView="TRUE" MobileView="TRUE" Type="HTML" DisplayName="My task" Url="{site}/Lists/Chief Engineer Yearly Checklist/My task.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="AssignedTo" />
+                    <Value Type="Integer">
+                      <UserID Type="Integer" />
+                    </Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Inspecting_x0020_Cribs_x002c__x0" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Inspecting Cribs, Rollaway and Pullout sleepers" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{50a56749-75b9-4880-a971-66306484fa77}" Name="Inspecting_x0020_Cribs_x002c__x0" Description="" SourceID="{6d3b33ff-1055-496c-9364-c548cadb788b}" StaticName="Inspecting_x0020_Cribs_x002c__x0" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>0</Default>
+            </Field>
+            <Field ID="{662b5014-1b36-47bc-89d3-89b4c6bf3081}" Type="Calculated" ResultType="Text" Name="OverallConfigValue" DisplayName="OverallConfigValue" SourceID="{6d3b33ff-1055-496c-9364-c548cadb788b}" StaticName="OverallConfigValue" ColName="sql_variant1" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Inspecting Cribs, Rollaway and Pullout sleepers]=TRUE,"YES","NO")</Formula>
+            </Field>
+            <Field ID="{f3c135ac-0007-431e-9a72-aa1bc5649017}" Type="Calculated" ResultType="Text" Name="ChecklistStatus" DisplayName="Checklist Status" SourceID="{6d3b33ff-1055-496c-9364-c548cadb788b}" StaticName="ChecklistStatus" ColName="sql_variant2" RowOrdinal="0" ReadOnly="TRUE">
+              <Formula>=IF([Inspecting Cribs, Rollaway and Pullout sleepers]=TRUE,"Completed","In Progress")</Formula>
+            </Field>
+            <Field Type="User" DisplayName="Assigned To" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{b2102f06-02bb-45ba-8dc6-be2241b21128}" Name="AssignedTo" SourceID="{6d3b33ff-1055-496c-9364-c548cadb788b}" StaticName="AssignedTo" ColName="int1" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
